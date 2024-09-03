@@ -2,13 +2,13 @@
 title: 블로그 이관 및 회고
 tags:
   - 일상
-image: ./assets/01.png
+image: ./assets/01.jpg
 date: 2024-08-06 16:43:27
 series: 일상 이야기
 draft: false
 ---
 
-![banner](./assets/01.png)
+![banner](./assets/01.jpg)
 
 돌이켜보면, 2017년은 나에게 많은 변화가 있는 해였던 것 같다. 모든 것이 끝나고, 새로 시작하였으며 지리적 위치 및 만나는 사람들도 달라졌기 때문이다.
 
