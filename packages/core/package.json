@@ -34,7 +34,7 @@
   },
   "scripts": {
     "run:core": "tsc --watch",
-    "build:core": "rm -rf lib && tsc"
+    "build:core": "tsc"
   },
   "dependencies": {
     "@testing-library/react-hooks": "^7.0.2"
