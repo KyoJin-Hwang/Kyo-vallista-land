@@ -2,7 +2,8 @@
 title: 첫번째 테스트
 tags:
   - 회고
-date: 2017-12-25 18:00:55
+date: 2024-09-04 12:48:30
+image: './assets/01.png'
 draft: false
 ---
 
