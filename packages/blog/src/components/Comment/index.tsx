@@ -21,7 +21,7 @@ export const Comment: VFC = () => {
     }
     scriptEl.async = true
     scriptEl.src = 'https://utteranc.es/client.js'
-    scriptEl.setAttribute('repo', 'Vallista/vallista.github.io')
+    scriptEl.setAttribute('repo', 'Kyojin-Hwang/bobcost.github.io')
     scriptEl.setAttribute('issue-term', 'title')
     scriptEl.setAttribute('theme', 'github-light')
     scriptEl.setAttribute('crossorigin', 'anonymous')
