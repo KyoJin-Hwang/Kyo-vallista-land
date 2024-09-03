@@ -23,7 +23,7 @@ const IndexPage: VFC<PageProps<IndexQuery>> = (props) => {
               어서오세요!
             </Text>
             <Text as='h1' size={48} weight={800} lineHeight={56}>
-              저는 마광휘입니다.
+              저는 황교진입니다.
             </Text>
           </Title>
           <SubTitle>
