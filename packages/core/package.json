@@ -4,7 +4,7 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/vallista/vallista-land"
+    "url": "https://github.com/Kyojin-Hwang/vallista-land"
   },
   "publishConfig": {
     "access": "public",
@@ -34,7 +34,7 @@
   },
   "scripts": {
     "run:core": "tsc --watch",
-    "build:core": "tsc"
+    "build:core": "rm -rf lib && tsc"
   },
   "dependencies": {
     "@testing-library/react-hooks": "^7.0.2"
