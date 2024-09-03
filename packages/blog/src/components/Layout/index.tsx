@@ -2,7 +2,7 @@ import { Container } from '@vallista/core'
 import { graphql, useStaticQuery } from 'gatsby'
 import { FC, useEffect, useMemo, useState } from 'react'
 
-import { Header } from '../../components/Header'
+import { Header } from '../Header'
 import { IndexQuery } from '../../types/type'
 import { filteredByDraft, localStorage } from '../../utils'
 import { Footer } from '../Footer'

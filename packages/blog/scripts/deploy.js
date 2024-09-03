@@ -7,8 +7,8 @@ ghpages.publish(
   {
     branch: 'main',
     repo: TOKEN
-      ? `https://vallista:${TOKEN}@github.com/Vallista/vallista.github.io.git`
-      : 'https://github.com/Vallista/vallista.github.io.git'
+      ? `https://Kyojin-Hwang:${TOKEN}@github.com/Kyojin-Hwang/bobcost.github.io.git`
+      : 'https://github.com/Kyojin-Hwang/bobcost.github.io.git'
   },
   function (err) {
     console.log(err)
