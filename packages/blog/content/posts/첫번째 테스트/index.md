@@ -1,5 +1,5 @@
 ---
-title: TypeScript의 interface와 type alias
+title: 첫번째 테스트
 tags:
   - 프론트엔드
 date: 2021-10-10 16:07:18
