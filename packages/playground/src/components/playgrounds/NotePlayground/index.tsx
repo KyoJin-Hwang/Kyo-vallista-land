@@ -1,4 +1,4 @@
-import { Button, Container, Note } from '@vallista/core'
+import { Button, Container, Note } from '@Kyo/vallista-core'
 import { VFC } from 'react'
 
 const ProgressPlayground: VFC = () => {

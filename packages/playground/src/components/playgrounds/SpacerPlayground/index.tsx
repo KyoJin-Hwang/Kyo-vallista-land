@@ -1,4 +1,4 @@
-import { Colors, Container, Spacer } from '@vallista/core'
+import { Colors, Container, Spacer } from '@Kyo/vallista-core'
 import { VFC } from 'react'
 
 const TogglePlayground: VFC = () => {

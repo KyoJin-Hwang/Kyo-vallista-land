@@ -1,4 +1,4 @@
-import { Collapse, Container } from '@vallista/core'
+import { Collapse, Container } from '@Kyo/vallista-core'
 import { navigate } from 'gatsby'
 import { VFC } from 'react'
 

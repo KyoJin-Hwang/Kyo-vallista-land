@@ -1,6 +1,6 @@
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
-import { ThemeProvider, useTheme } from '@vallista/core'
+import { ThemeProvider, useTheme } from '@Kyo/vallista-core'
 import React, { useEffect, useState } from 'react'
 
 import { onChangeThemeEvent, isDarkMode } from './src/utils'

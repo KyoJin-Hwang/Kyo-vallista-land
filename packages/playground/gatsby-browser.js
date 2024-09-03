@@ -1,5 +1,5 @@
 import React from 'react'
-import { ThemeProvider } from '@vallista/core'
+import { ThemeProvider } from '@Kyo/vallista-core'
 
 export function wrapRootElement({ element }) {
   return <ThemeProvider>{element}</ThemeProvider>
