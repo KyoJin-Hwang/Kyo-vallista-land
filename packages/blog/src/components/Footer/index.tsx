@@ -23,9 +23,9 @@ export const Footer: VFC = () => {
             </FooterLink>
           </FooterGroup>
           <FooterGroup title='관련 사이트'>
-            <FooterLink href='https://vallista.tistory.com'>다른 블로그</FooterLink>
-            <FooterLink href='https://career.woowahan.com/'>우아한형제들 채용</FooterLink>
-            <FooterLink href='https://techblog.woowahan.com/'>우아한형제들 기술블로그</FooterLink>
+            {/* <FooterLink href='https://vallista.tistory.com'>다른 블로그</FooterLink> */}
+            {/* <FooterLink href='https://career.woowahan.com/'>우아한형제들 채용</FooterLink> */}
+            {/* <FooterLink href='https://techblog.woowahan.com/'>우아한형제들 기술블로그</FooterLink> */}
           </FooterGroup>
         </FooterWrapper>
       </Styled._FooterBox>
