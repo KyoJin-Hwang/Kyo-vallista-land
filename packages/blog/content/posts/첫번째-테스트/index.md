@@ -1,5 +1,5 @@
 ---
-title: Merge 테스트?
+title: Merge 테스트2?
 tags:
   - 일상
 image: ./assets/01.jpg
