@@ -31,7 +31,7 @@ export const Footer: VFC = () => {
       </Styled._FooterBox>
       <Styled._FooterAllRightReserve>
         <Text size={12}>
-          Copyright ⓒ {nowYear} <Link to='https://github.com/KyoJin-Hwang'>Kyojin-Hwang (Owen)</Link> All rights
+          Copyright ⓒ {nowYear} <Link to='https://Kyojin-Hwang.github.com'>Kyojin-Hwang (Owen)</Link> All rights
           reserved.
         </Text>
         <Spacer y={0.1} />
