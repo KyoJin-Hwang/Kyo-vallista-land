@@ -13,7 +13,7 @@ export const _Item = styled.li<{ timeToRead: number }>`
     margin-bottom: 0.5rem;
     &::marker {
       font-weight: 600;
-      color: ${theme.colors.HIGHLIGHT.PINK};
+      color: ${theme.colors.SUCCESS.DEFAULT};
     }
 
     &::after {
@@ -24,15 +24,15 @@ export const _Item = styled.li<{ timeToRead: number }>`
 
     & > span {
       cursor: pointer;
-      border-bottom: 2px solid ${theme.colors.HIGHLIGHT.PINK};
+      border-bottom: 2px solid ${theme.colors.SUCCESS.DEFAULT};
       font-weight: 600;
       text-decoration: none;
       color: ${theme.colors.PRIMARY.FOREGROUND};
       transition: all 0.1s ease-out;
 
       &:hover {
-        background: ${theme.colors.HIGHLIGHT.PINK};
-        border-top: 2px solid ${theme.colors.HIGHLIGHT.PINK};
+        background: ${theme.colors.SUCCESS.DEFAULT};
+        border-top: 2px solid ${theme.colors.SUCCESS.DEFAULT};
         color: ${theme.colors.PRIMARY.BACKGROUND};
       }
     }
