@@ -8,7 +8,7 @@ import { ListTable } from '../components/ListTable'
 import { Seo } from '../components/Seo'
 import { IndexQuery, PageProps, Post } from '../types/type'
 import { filteredByDraft, getTime } from '../utils'
-
+const MyState = { 0: '일하고 있습니다.', 1: '구직중 입니다.' }
 const IndexPage: VFC<PageProps<IndexQuery>> = (props) => {
   const { data } = props
   const { nodes } = data.allMarkdownRemark
@@ -28,9 +28,12 @@ const IndexPage: VFC<PageProps<IndexQuery>> = (props) => {
           </Title>
           <SubTitle>
             <Text as='p' size={20} weight={400} lineHeight={40}>
-              대한민국 서울에서 <strong>소프트웨어 엔지니어</strong>로 일하고 있어요. 한 분야에 국한되지 않는 여러
-              문제를 해결하는 것에 즐거움을 느낍니다. 공부하고 느낀점을 위주로 블로그에 글을 작성하고 있어요. 최근에는
-              프론트엔드 문제 해결에 관심이 많아, 많은 시간을 쏟고 있어요. 러스트를 기반으로한 웹 생태계가 기대돼요!
+              대한민국 에서 <strong>소프트웨어 엔지니어</strong>로 {MyState[1]}
+              <br />글 쓰는 것을 좋아하며, 개발을 맛있게 코딩 하고싶은 <strong>개발자</strong>입니다!
+              <br />
+              블로그에 글 열심히 작성할게요😿 많은 <strong>피드백</strong> 부탁 드려요😺
+              <br />
+              <strong>2024.09 현재 관심사 :</strong> 구직 및 이력서 작성 📩
             </Text>
           </SubTitle>
           <Button size='large' color='alert' onClick={() => moveToLocation('/posts')}>
@@ -41,7 +44,7 @@ const IndexPage: VFC<PageProps<IndexQuery>> = (props) => {
         </Wrapper>
       </Header>
       <Contents>
-        <ListTable title='최근 글' list={filteredNewestPosts(nodes)} />
+        <ListTable title='최근 게시글' list={filteredNewestPosts(nodes)} />
       </Contents>
     </Container>
   )
