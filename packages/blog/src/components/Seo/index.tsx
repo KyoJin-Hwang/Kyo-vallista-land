@@ -19,7 +19,7 @@ export const Seo: VFC<SeoProps> = ({ name, image, isPost = false }) => {
   const seo = {
     title: name || defaultTitle,
     description: defaultDescription,
-    image: `${siteUrl}${image || defaultImage}`,
+    image: `${siteUrl}${defaultImage}`,
     url: `${siteUrl}${decodeURIComponent(location.pathname)}`
   }
 
