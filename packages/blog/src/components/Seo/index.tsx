@@ -1,3 +1,4 @@
+import { CloudLightning } from '@Kyo/vallista-core/lib/components/Icon/assets'
 import { useLocation } from '@reach/router'
 import { useStaticQuery, graphql } from 'gatsby'
 import { VFC } from 'react'
@@ -11,18 +12,19 @@ interface SeoProps {
   isPost?: boolean
 }
 
-export const Seo: VFC<SeoProps> = ({ name, image, isPost = false }) => {
+export const Seo: VFC<SeoProps> = ({ name, isPost = false }) => {
   const location = useLocation()
   const { site } = useStaticQuery<StaticQuery>(query)
+  // defaultImage 는 profileImage가 들어감 잠시 주석
   const { defaultTitle, titleTemplate, defaultDescription, siteUrl, defaultImage, twitterUsername } = site.siteMetadata
 
   const seo = {
     title: name || defaultTitle,
     description: defaultDescription,
-    image: `${siteUrl}${image}`,
+    image: `${siteUrl}${'/resume.png'}`,
     url: `${siteUrl}${decodeURIComponent(location.pathname)}`
   }
-
+  console.log(seo.image)
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
       <title>{seo.title}</title>
