@@ -44,11 +44,11 @@ export const _FoldingButton = styled.button<{ fold: boolean }>`
   ${({ theme, fold }) => css`
     ${fold
       ? css`
-          color: ${theme.colors.HIGHLIGHT.PINK};
+          color: ${theme.colors.SUCCESS.DEFAULT};
         `
       : css`
           &:hover {
-            color: ${theme.colors.PRIMARY.FOREGROUND};
+            color: ${theme.colors.SUCCESS.DEFAULT};
           }
           color: ${theme.colors.PRIMARY.ACCENT_4};
         `}
@@ -76,11 +76,11 @@ export const _SettingButton = styled.button<{ popup: boolean }>`
   ${({ theme, popup }) => css`
     ${popup
       ? css`
-          color: ${theme.colors.HIGHLIGHT.PINK};
+          color: ${theme.colors.SUCCESS.DEFAULT};
         `
       : css`
           &:hover {
-            color: ${theme.colors.PRIMARY.FOREGROUND};
+            color: ${theme.colors.SUCCESS.DEFAULT};
           }
           color: ${theme.colors.PRIMARY.ACCENT_4};
         `}

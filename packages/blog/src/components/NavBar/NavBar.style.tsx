@@ -140,7 +140,7 @@ export const _Category = styled.a<{ checked?: boolean }>`
           height: 60px;
           border-left: none;
 
-          border-bottom: 3px solid ${theme.colors.HIGHLIGHT.PINK};
+          border-bottom: 3px solid ${theme.colors.SUCCESS.DEFAULT};
         }
       }
     `}

@@ -311,7 +311,7 @@ export const _Contents = styled(_Wrapper)`
       margin: 0 -1rem;
       margin-bottom: 2rem;
       padding: 1rem 1rem;
-      border-left: 6px solid ${theme.colors.HIGHLIGHT.PINK};
+      border-left: 6px solid ${theme.colors.SUCCESS.DEFAULT};
 
       & > p {
         margin-bottom: 0;

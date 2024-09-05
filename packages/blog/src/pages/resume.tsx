@@ -11,7 +11,7 @@ const ResumePage: VFC = () => {
 
   return (
     <Container>
-      <Seo name='이력서' image='/resume.png' />
+      <Seo name='이력서' />
       <Header>
         <Wrapper>
           <Container>
@@ -368,7 +368,7 @@ const Contents = styled.div`
 
     &::marker {
       ${({ theme }) => css`
-        color: ${theme.colors.HIGHLIGHT.PINK};
+        color: ${theme.colors.SUCCESS.DEFAULT};
       `}
     }
   }
@@ -414,7 +414,7 @@ const TwoColumn = styled.div`
       padding-left: 1rem;
 
       ${({ theme }) => css`
-        border-left: 3px solid ${theme.colors.HIGHLIGHT.PINK};
+        border-left: 3px solid ${theme.colors.SUCCESS.DEFAULT};
       `}
     }
   }

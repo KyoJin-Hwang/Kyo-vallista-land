@@ -285,7 +285,7 @@ export const _ListStyleItem = styled.a<Pick<CardStyleItemProps, 'isActive'>>`
   ${({ theme, isActive }) => css`
     ${isActive &&
     css`
-      border-left: 6px solid ${theme.colors.HIGHLIGHT.PINK};
+      border-left: 6px solid ${theme.colors.SUCCESS.DEFAULT};
       padding-left: 12px;
     `};
 
