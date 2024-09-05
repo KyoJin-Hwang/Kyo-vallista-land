@@ -4,8 +4,6 @@ import { Image, Spacer, Text } from '@Kyo/vallista-core'
 import { Link } from 'gatsby'
 import { useEffect, VFC } from 'react'
 
-import FailureImage from '../assets/images/failure.gif'
-
 const NotFoundPage: VFC = () => {
   const location = useLocation()
 
@@ -31,7 +29,6 @@ const NotFoundPage: VFC = () => {
 
   return (
     <Center>
-      <Image src={FailureImage as string} width={400} height={400} />
       <Text size={16}>페이지를 찾지 못했어요 :(</Text>
       <Spacer y={0.5} />
       <Link to='/'>
