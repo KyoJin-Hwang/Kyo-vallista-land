@@ -28,15 +28,14 @@ const IndexPage: VFC<PageProps<IndexQuery>> = (props) => {
           </Title>
           <SubTitle>
             <Text as='p' size={20} weight={400} lineHeight={40}>
-              대한민국 에서 <strong>소프트웨어 엔지니어</strong>로 {MyState[1]}
-              <br />글 쓰는 것을 좋아하며, 개발을 맛있게 코딩 하고싶은 <strong>개발자</strong>입니다!
+              대한민국 에서 <strong>소프트웨어 엔지니어</strong>로 {MyState[1]} 글 쓰는 것을 좋아하며, 개발을 맛있게
+              코딩 하고싶은 <strong>개발자</strong>입니다! 블로그에 글 열심히 작성할게요<EmojiText>😿</EmojiText> 많은{' '}
+              <strong>피드백</strong> 부탁드려요<EmojiText>😺</EmojiText>
               <br />
-              블로그에 글 열심히 작성할게요😿 많은 <strong>피드백</strong> 부탁 드려요😺
-              <br />
-              <strong>2024.09 현재 관심사 :</strong> 구직 및 이력서 작성 📩
+              <strong>2024.09 현재 관심사 :</strong> 구직 및 이력서 작성 <EmojiText>📩</EmojiText>
             </Text>
           </SubTitle>
-          <Button size='large' color='alert' onClick={() => moveToLocation('/posts')}>
+          <Button size='large' color='success' onClick={() => moveToLocation('/posts')}>
             <Text size={16} weight={800}>
               블로그 글 보러갈까요?
             </Text>
@@ -85,6 +84,19 @@ const HandAnimation = keyframes`
     transform: rotateZ(0deg);
   }
 `
+const EmojiAnimation = keyframes`
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+`
 
 const Wrapper = styled.div`
   margin-left: auto;
@@ -126,6 +138,10 @@ const Contents = styled.section`
   margin-right: auto;
   max-width: 900px;
   padding: 2rem;
+`
+const EmojiText = styled.p`
+  display: inline-block;
+  animation: ${EmojiAnimation} 1s ease-in-out infinite;
 `
 
 export default IndexPage
