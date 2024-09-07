@@ -19,6 +19,7 @@ interface ReturningUseConfig {
       role: string
       bio: string[]
       github: string
+      velog: string
       email: string
     }
     careers: {
