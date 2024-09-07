@@ -447,8 +447,8 @@
     "description": "취미",
     "list": [
       {
-        "title": "블로깅",
-        "url": "https://vallista.kr",
+        "title": "개발 블로깅",
+        "url": "https://bobcost.site",
         "descriptions": [
           "개발을 좋아해서 틈틈히 공부를 하고 글을 작성하여 블로그에 투고합니다.",
           "6년간 꾸준히 글을 써오면서 성실한 면이 부각되었다고 생각합니다.",
@@ -485,16 +485,8 @@
     "description": "발표",
     "list": [
       {
-        "title": "우아콘 - 웹앱 서비스 히스토리를 관리하기 위한 여정",
-        "url": "https://www.youtube.com/watch?v=q_NBDCtZaQU"
-      },
-      {
-        "title": "Vuetiful.korea - Vue.js를 이용한 백오피스 구현기 발표",
-        "url": "https://vuejs-kr.github.io/meetup/#/"
-      },
-      {
-        "title": "NaverD2 - Vue.js를 이용한 백오피스 제작 경험 공유",
-        "url": "https://www.youtube.com/watch?v=_WACO1jIIhE"
+        "title": "",
+        "url": ""
       }
     ]
   },
@@ -502,44 +494,8 @@
     "description": "활동",
     "list": [
       {
-        "title": "2022.02 ~ 2022.06 우아한 테크코스 프론트엔드 리뷰어 활동",
-        "url": "https://github.com/woowacourse"
-      },
-      {
-        "title": "2021.03 ~ 2021.06 우아한 테크코스 프론트엔드 리뷰어 활동",
-        "url": "https://github.com/woowacourse"
-      },
-      {
-        "title": "2020.06 ~ 2020.12 패스트 캠퍼스 모의 면접관 활동",
-        "url": null
-      },
-      {
-        "title": "2020.12 우아톤 제 2회 2위",
-        "url": null
-      },
-      {
-        "title": "2019.12 우아톤 제 1회 3위",
-        "url": null
-      },
-      {
-        "title": "2019.05.18 스포카 무쓸모톤 1위",
-        "url": "https://festa.io/events/281"
-      },
-      {
-        "title": "2018.02 ~ STACCATO 멘토",
-        "url": null
-      },
-      {
-        "title": "2016.06 ~ STAC 멘토",
-        "url": null
-      },
-      {
-        "title": "2016.06 ~ 2016.08 국제글로벌통상고등학교 강사",
-        "url": null
-      },
-      {
-        "title": "2014.02 ~ 2017.06 한국게임과학고등학교 강사",
-        "url": null
+        "title": "",
+        "url": ""
       }
     ]
   },
@@ -547,19 +503,7 @@
     "description": "강연",
     "list": [
       {
-        "title": "2021.6.1 [우아한인터뷰] 프론트엔드 개발자 '마광휘님'",
-        "url": "https://www.youtube.com/watch?v=MUF-13_6UjQ"
-      },
-      {
-        "title": "2018.07 한국게임과학고등학교, “게임 개발자에서 서비스 개발자로” 주제로 강연",
-        "url": null
-      },
-      {
-        "title": "2018.04 한세사이버보안고등학교, “게임 개발자에서 서비스 개발자로” 주제로 강연",
-        "url": null
-      },
-      {
-        "title": "2015.08 장성중학교, “게임 프로그래머 직업에 대해” 주제로 강연",
+        "title": "",
         "url": null
       }
     ]
@@ -569,50 +513,6 @@
     "list": [
       {
         "title": "2020 우아한형제들 우수사원",
-        "url": null
-      },
-      {
-        "title": "2016.08 제 15회 KWC, 지도교사상 (우송대학교 총장상) - 우송대학교",
-        "url": null
-      },
-      {
-        "title": "2013.11 Smarteen App Challenge, 우수상 (대표이사상) - 캡스톤 파트너즈",
-        "url": null
-      },
-      {
-        "title": "2013.10 비즈쿨 창업 경진대회, 은상 - 창업진흥원",
-        "url": null
-      },
-      {
-        "title": "2013.08 제 12회 KWC, 대상 (대전광역시 교육감상) - 우송대학교",
-        "url": null
-      },
-      {
-        "title": "2013.08 제 11회 게임캠프 게임제작 부분, 대상 (전라북도지사상) - 전라북도",
-        "url": null
-      },
-      {
-        "title": "2013.07 제 9회 주니어 창업 경진대회, 우수상 - 한밭대학교",
-        "url": null
-      },
-      {
-        "title": "2013.05 제 15회 고교생 만화 애니메이션 공모전 게임 부문, 은상 (상명대학교 총장상) - 상명대학교",
-        "url": null
-      },
-      {
-        "title": "2013.04 2013 기능경기대회 전라북도, 금상 (기능경기 위원장상) - 전라북도 기능경기 위원회",
-        "url": null
-      },
-      {
-        "title": "2013.02 KBS 스카우트 인터파크편, 최종 우승 (1등) - KBS",
-        "url": null
-      },
-      {
-        "title": "2012.11 금강 청소년 영상 예술제 게임 부문, 금상 (한국컨텐츠진흥원장상) - 한국컨텐츠진흥원",
-        "url": null
-      },
-      {
-        "title": "2012.06 제 18회 서울정보과학경시대회 장려상 - 서울정보과학경시대회",
         "url": null
       }
     ]

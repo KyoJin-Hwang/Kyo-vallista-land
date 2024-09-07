@@ -216,7 +216,8 @@ const ResumePage: VFC = () => {
           </Container>
         </Contents>
       </Box>
-      <Box id='speaker'>
+      {/* 발표 */}
+      {/* <Box id='speaker'>
         <Contents>
           <Container>
             <Text size={40} weight={800}>
@@ -234,8 +235,9 @@ const ResumePage: VFC = () => {
             </ul>
           </Container>
         </Contents>
-      </Box>
-      <Box id='activities'>
+      </Box> */}
+      {/* 활동 */}
+      {/* <Box id='activities'>
         <Contents>
           <Container>
             <Text size={40} weight={800}>
@@ -259,8 +261,9 @@ const ResumePage: VFC = () => {
             </ul>
           </Container>
         </Contents>
-      </Box>
-      <Box id='lectures'>
+      </Box> */}
+      {/* 강연 */}
+      {/* <Box id='lectures'>
         <Contents>
           <Container>
             <Text size={40} weight={800}>
@@ -284,7 +287,8 @@ const ResumePage: VFC = () => {
             </ul>
           </Container>
         </Contents>
-      </Box>
+      </Box> */}
+      {/* 수상 */}
       <Box id='awards'>
         <Contents>
           <Container>
