@@ -3,9 +3,9 @@
   "title": "황교진(Owen) 이력서",
   "titleTemplate": "%s · Owen",
   "placeholder": "/profile.png",
-  "siteUrl": "https://kyojin-hwang.github.io/",
+  "siteUrl": "https://bobcost.site/",
   "description": "프론트엔드 개발자 황교진의 이력서 및 블로그",
   "twitterUserName": "Owen",
   "github": "Kyojin-Hwang",
-  "secondary": "https://vallista.tistory.com"
+  "secondary": "https://velog.io/@owen1127/posts"
 }
