@@ -12,6 +12,7 @@ const ResumePage: VFC = () => {
   return (
     <Container>
       <Seo name='이력서' />
+      {/* 헤더 */}
       <Header>
         <Wrapper>
           <Container>
@@ -57,7 +58,8 @@ const ResumePage: VFC = () => {
                     </Text>
                   </Container>
                 </Button>
-                <Button size='large' width={240} onClick={() => openNewPage(resume.config.velog)}>
+                {/* velog */}
+                {/* <Button size='large' width={240} onClick={() => openNewPage(resume.config.velog)}>
                   <Container row center>
                     <svg width='30' height='30' viewBox='0 0 192 192' fill='currentColor'>
                       <path
@@ -72,13 +74,14 @@ const ResumePage: VFC = () => {
                       velog 블로그 방문하기
                     </Text>
                   </Container>
-                </Button>
+                </Button> */}
               </Container>
             </SubTitle>
           </Container>
         </Wrapper>
       </Header>
       <Spacer />
+      {/* 커리어 */}
       <Box id='career'>
         <Contents>
           <Container>
@@ -116,7 +119,7 @@ const ResumePage: VFC = () => {
                     {it.projects?.map((it_, idx) => (
                       <Container key={idx}>
                         <Text size={24} weight={600} as='h3'>
-                          {it_.name}
+                          {it_.url ? <a onClick={() => openNewPage(it_.url!)}>{it_.name}</a> : it_.name}
                         </Text>
                         <Spacer y={1} />
                         <Text size={16}>
@@ -145,6 +148,44 @@ const ResumePage: VFC = () => {
           </Container>
         </Contents>
       </Box>
+      {/* 사이드 */}
+      {/* <Box id='side'>
+        <Contents>
+          <Container>
+            <Text size={40} weight={800}>
+              {resume.side.title}
+            </Text>
+            <Spacer y={1.5} />
+            {resume.side.list.map((it, idx) => (
+              <Container key={idx}>
+                <Text as='h3' size={24} weight={600}>
+                  {it.url ? <a onClick={() => openNewPage(it.url!)}>{it.title}</a> : it.title}
+                </Text>
+                <div>
+                  {it.descriptions?.map((it_, idx) => (
+                    <ul key={idx}>
+                      <li>
+                        <Container>
+                          <Text size={16}>{it_.title}</Text>
+                          <SubTitleText>
+                            {it_.subTitle.map((it__, idx) => (
+                              <Text size={14} key={idx}>
+                                {it__}
+                              </Text>
+                            ))}
+                          </SubTitleText>
+                        </Container>
+                      </li>
+                    </ul>
+                  ))}
+                </div>
+                <Spacer y={1} />
+              </Container>
+            ))}
+          </Container>
+        </Contents>
+      </Box> */}
+      {/* 스킬 */}
       <Box id='skills'>
         <Contents>
           <Container>
@@ -181,6 +222,7 @@ const ResumePage: VFC = () => {
           </Container>
         </Contents>
       </Box>
+      {/* 취미 */}
       <Box id='hobby'>
         <Contents>
           <Container>

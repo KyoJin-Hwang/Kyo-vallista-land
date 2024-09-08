@@ -38,6 +38,18 @@ interface ReturningUseConfig {
           startDate: string
           endDate: string | null
           which: string[]
+          url: string | null
+        }[]
+      }[]
+    }
+    side: {
+      title: string
+      list: {
+        title: string
+        url: string | null
+        descriptions: {
+          title: string
+          subTitle: string[]
         }[]
       }[]
     }
@@ -63,7 +75,7 @@ interface ReturningUseConfig {
       description: string
       list: {
         title: string
-        url: string
+        url: string | null
       }[]
     }
     activities: {
