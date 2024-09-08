@@ -58,7 +58,8 @@ const ResumePage: VFC = () => {
                     </Text>
                   </Container>
                 </Button>
-                <Button size='large' width={240} onClick={() => openNewPage(resume.config.velog)}>
+                {/* velog */}
+                {/* <Button size='large' width={240} onClick={() => openNewPage(resume.config.velog)}>
                   <Container row center>
                     <svg width='30' height='30' viewBox='0 0 192 192' fill='currentColor'>
                       <path
@@ -73,7 +74,7 @@ const ResumePage: VFC = () => {
                       velog 블로그 방문하기
                     </Text>
                   </Container>
-                </Button>
+                </Button> */}
               </Container>
             </SubTitle>
           </Container>
