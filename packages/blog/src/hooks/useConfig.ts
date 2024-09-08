@@ -38,6 +38,7 @@ interface ReturningUseConfig {
           startDate: string
           endDate: string | null
           which: string[]
+          url: string | null
         }[]
       }[]
     }

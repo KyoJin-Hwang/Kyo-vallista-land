@@ -116,7 +116,7 @@ const ResumePage: VFC = () => {
                     {it.projects?.map((it_, idx) => (
                       <Container key={idx}>
                         <Text size={24} weight={600} as='h3'>
-                          {it_.name}
+                          {it_.url ? <a onClick={() => openNewPage(it_.url!)}>{it_.name}</a> : it_.name}
                         </Text>
                         <Spacer y={1} />
                         <Text size={16}>
