@@ -28,7 +28,7 @@
         ],
         "projects": [
           {
-            "name": "인디제이 웹 페이지 개발",
+            "name": "플레이어 웹 페이지 개발",
             "descriptions": ["인디제이 웹 버전 프론트엔드를 개발 및 유지보수 하였습니다."],
             "startDate": "2022.08",
             "endDate": "2024.07",
@@ -42,7 +42,7 @@
             "url": "https://player.indj.ai"
           },
           {
-            "name": "인디제이 어드민 개발",
+            "name": "어드민 개발",
             "descriptions": ["인디제이 어드민 페이지를 개발 및 유지보수 하였습니다."],
             "startDate": "2022.08",
             "endDate": "2024.07",
@@ -56,6 +56,55 @@
               "DAU, MAU 데이터 시각화(차트) 작업 "
             ],
             "techStacks": ["React", "JavaScript", "Scss", "Antd", "Chart.js"]
+          },
+          {
+            "name": "회사소개",
+            "descriptions": ["반응형 웹으로 인디제이 회사소개 페이지 개발"],
+            "startDate": "2024.05",
+            "endDate": "2024.06",
+            "which": [
+              "yarn berry 및 Zero install 세팅",
+              "Eslint & Prettier 적용",
+              "메인페이지 폭죽 애니메이션 css 구현",
+              "Infinite Carousel 구현",
+              "문의뱃지 Animation 및 퍼블리싱, 문의 api 연결",
+              "전체 UI & UX 개발"
+            ],
+            "techStacks": ["React.js", "TypeScript", "Emotion"],
+            "url": "https://corp.indj.ai"
+          }
+        ]
+      },
+      {
+        "name": "인디제이 외주(CSbye)",
+        "department": "웹 프론트엔드",
+        "position": "Software Engineer",
+        "startDate": "2023.02",
+        "endDate": "2023.10",
+        "fold": true,
+        "descriptions": [
+          "게임,소프트웨어 등등 CS, QA, 마케팅, 모니터링을 대신 해주는 서비스이다.",
+          "내부상담원을 통한 문의 및 환불 처리를 대신 해주는 작업을하고 일일,주간,월간 보고서를 제공해준다."
+        ],
+        "projects": [
+          {
+            "name": "기업,상담원 관리자페이지 개발",
+            "descriptions": ["기업관리자와 상담원관리자에서 필요한 기능 및 퍼블리싱 작업을 했습니다."],
+            "startDate": "2022.08",
+            "endDate": "2024.07",
+            "which": [
+              "Chart.js 를 활용한 데이터 시각화 작업",
+              "Atomic 디자인 패턴을 활용한 컴포넌트 분리 및 재사용성 극대화",
+              "Axios instace를 사용하여 반복되는 코드를 개선 하였습니다.",
+              "Redux-toolkit 으로 사용자 정보 및 모달 상태를 분리하여 관리",
+              "TanStack Query(React Query)를 사용하여 캐싱관리 하여 문의(QnA) 데이터 처리 속도 향상",
+              "테이블안에 데이터를 react-export-excel로 엑셀파일로 변환하는 기능 구현",
+              "다국어 기능 구현",
+              "웹 안에서 유저에게 위치를 알려주기 위하여 BreadCrumbs 기능 구현",
+              "tailwind를 사용하여 퍼블리싱 작업"
+            ],
+            "techStacks": ["React.js", "TypeScript", "Redux", "TailwindCss"],
+            "url": "https://csbye.com"
           }
         ]
       }
@@ -65,8 +114,8 @@
     "title": "사이드",
     "list": [
       {
-        "title": "",
-        "url": "https://",
+        "title": "이력서 및 블로그 사이트",
+        "url": "https://bobcost.site",
         "descriptions": [
           {
             "title": "",
@@ -192,8 +241,7 @@
         "descriptions": [
           "평소에도 글을 적는 것을 좋아하고 정리하는 것을 좋아해서",
           "회고록, 개발, 트러블슈팅 등등 현재블로그, velog에 같이 정리하려고 합니다.",
-          "위의 제목을 누르면 제 블로그로 가실 수 있습니다!",
-          "https://velog.io/@owen1127/posts 에서 velog 글을 보실 수 있어요!"
+          "위의 제목을 누르면 제 블로그로 가실 수 있습니다!"
         ]
       },
       {
@@ -202,9 +250,12 @@
         "descriptions": ["헬스로 스트레스를 풀고 있습니다.", "유산소 운동으로 좋은 체력을 유지하려고 하고있습니다."]
       },
       {
-        "title": "맛집탐방",
-        "url": null,
-        "descriptions": ["음식 먹는것을 너무 좋아하고, 이전 꿈이 쉐프여서 그런지 맛집을 많이 찾아봅니다."]
+        "title": "코딩테스트 문제풀이",
+        "url": "https://github.com/KyoJin-Hwang/javascript-algorithm/tree/main/프로그래머스/0",
+        "descriptions": [
+          "알고리즘의 약한부분을 채워주는 느낌으로 풀고있다.",
+          "모르던 문제를 찾아보고 생각하면서 힘들게 풀면 성취감이 있다."
+        ]
       },
       {
         "title": "웹 탐방 및 만들기",

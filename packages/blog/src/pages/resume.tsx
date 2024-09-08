@@ -233,7 +233,7 @@ const ResumePage: VFC = () => {
             {resume.hobby.list.map((it, idx) => (
               <Container key={idx}>
                 <Text as='h3' size={24} weight={600}>
-                  {it.title}
+                  {it.url ? <a onClick={() => openNewPage(it.url)}>{it.title}</a> : it.title}
                 </Text>
                 <div>
                   {it.descriptions?.map((it_, idx) => (
