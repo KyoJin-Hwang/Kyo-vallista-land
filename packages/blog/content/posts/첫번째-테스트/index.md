@@ -5,7 +5,7 @@ tags:
 image: ./assets/01.jpg
 date: 2024-08-06 14:20:27
 draft: false
-series: '시리즈'
+series: '블로그 게시글 테스트'
 ---
 
 ![banner](./assets/01.jpg)
