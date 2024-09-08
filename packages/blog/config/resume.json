@@ -32,7 +32,12 @@
             "descriptions": ["인디제이 웹 버전 프론트엔드를 개발 및 유지보수 하였습니다."],
             "startDate": "2022.08",
             "endDate": "2024.07",
-            "which": ["와인포인트 와인 상세페이지 웹 컨버팅", "와인포인트 앱 비밀번호 변경 페이지 개발"],
+            "which": [
+              "Redux를 활용한 사용자 정보 및 음악 관리",
+              "API 통신을 통해 AI 음악추천 챗봇 UI 및 UX 개발",
+              "반응형 웹 개발",
+              "프로모션 웹 및 모바일 웹뷰 페이지 개발"
+            ],
             "techStacks": ["React.js", "TypeScript", "Redux"],
             "url": "https://player.indj.ai"
           },
