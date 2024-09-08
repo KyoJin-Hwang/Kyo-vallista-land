@@ -56,6 +56,21 @@
       }
     ]
   },
+  "side": {
+    "title": "사이드",
+    "list": [
+      {
+        "title": "",
+        "url": "https://",
+        "descriptions": [
+          {
+            "title": "",
+            "subTitle": [""]
+          }
+        ]
+      }
+    ]
+  },
   "skills": {
     "title": "기술",
     "list": [
@@ -201,7 +216,7 @@
     "list": [
       {
         "title": "",
-        "url": ""
+        "url": null
       }
     ]
   },
@@ -210,7 +225,7 @@
     "list": [
       {
         "title": "",
-        "url": ""
+        "url": null
       }
     ]
   },

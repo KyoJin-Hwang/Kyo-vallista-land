@@ -42,6 +42,17 @@ interface ReturningUseConfig {
         }[]
       }[]
     }
+    side: {
+      title: string
+      list: {
+        title: string
+        url: string | null
+        descriptions: {
+          title: string
+          subTitle: string[]
+        }[]
+      }[]
+    }
     skills: {
       title: string
       list: {
@@ -64,7 +75,7 @@ interface ReturningUseConfig {
       description: string
       list: {
         title: string
-        url: string
+        url: string | null
       }[]
     }
     activities: {
