@@ -160,7 +160,7 @@ export const _Contents = styled(_Wrapper)`
 
       &::marker {
         font-weight: 600;
-        color: ${theme.colors.HIGHLIGHT.PINK};
+        color: ${theme.colors.SUCCESS.DEFAULT};
       }
     }
 
@@ -169,7 +169,7 @@ export const _Contents = styled(_Wrapper)`
 
       &::marker {
         font-weight: 600;
-        color: ${theme.colors.HIGHLIGHT.PINK};
+        color: ${theme.colors.SUCCESS.DEFAULT};
       }
     }
 
