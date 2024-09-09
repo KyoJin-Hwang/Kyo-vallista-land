@@ -276,7 +276,7 @@ export const _Contents = styled(_Wrapper)`
 
     p > code {
       font-weight: 600;
-      color: ${theme.colors.HIGHLIGHT.PINK};
+      color: ${theme.colors.SUCCESS.DEFAULT};
       white-space: inherit;
 
       & * span {
