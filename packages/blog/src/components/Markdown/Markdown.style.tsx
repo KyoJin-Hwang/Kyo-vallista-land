@@ -46,7 +46,7 @@ export const _Contents = styled(_Wrapper)`
     blockquote,
     ol {
       font-size: 1rem;
-      margin: 0 0 2rem;
+      /* margin: 0 0 2rem; */
     }
 
     center {
@@ -183,7 +183,7 @@ export const _Contents = styled(_Wrapper)`
 
       & code {
         font-weight: 600;
-        color: ${theme.colors.HIGHLIGHT.PINK};
+        color: ${theme.colors.SUCCESS.DEFAULT};
         white-space: inherit;
 
         & * span {
@@ -261,7 +261,7 @@ export const _Contents = styled(_Wrapper)`
 
       & > code {
         font-weight: 600;
-        color: ${theme.colors.HIGHLIGHT.PINK};
+        color: ${theme.colors.SUCCESS.DEFAULT};
         white-space: inherit;
 
         & * span {
@@ -276,7 +276,7 @@ export const _Contents = styled(_Wrapper)`
 
     p > code {
       font-weight: 600;
-      color: ${theme.colors.HIGHLIGHT.PINK};
+      color: ${theme.colors.SUCCESS.DEFAULT};
       white-space: inherit;
 
       & * span {
