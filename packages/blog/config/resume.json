@@ -55,7 +55,7 @@
               "음성광고 CRUD 구현 및 퍼블리싱 작업",
               "DAU, MAU 데이터 시각화(차트) 작업 "
             ],
-            "techStacks": ["React", "JavaScript", "Scss", "Antd", "Chart.js"]
+            "techStacks": ["React", "JavaScript", "Scss"]
           },
           {
             "name": "회사소개",
@@ -70,7 +70,7 @@
               "문의뱃지 Animation 및 퍼블리싱, 문의 api 연결",
               "전체 UI & UX 개발"
             ],
-            "techStacks": ["React.js", "TypeScript", "Emotion"],
+            "techStacks": ["React", "TypeScript", "Emotion"],
             "url": "https://corp.indj.ai"
           }
         ]
@@ -103,7 +103,7 @@
               "웹 안에서 유저에게 위치를 알려주기 위하여 BreadCrumbs 기능 구현",
               "tailwind를 사용하여 퍼블리싱 작업"
             ],
-            "techStacks": ["React.js", "TypeScript", "Redux", "TailwindCss"],
+            "techStacks": ["React", "TypeScript", "Redux", "TailwindCss"],
             "url": "https://csbye.com"
           }
         ]
@@ -115,11 +115,23 @@
     "list": [
       {
         "title": "이력서 및 블로그 사이트",
+        "techStacks": ["React"],
         "url": "https://bobcost.site",
         "descriptions": [
           {
-            "title": "",
-            "subTitle": [""]
+            "title": "모노레포 커스터마이징",
+            "subTitle": ["core에서의 package.json 수정", "Seo컴포넌트 meta태그 수정"]
+          },
+          {
+            "title": "GitAction으로 CI/CD 구축",
+            "subTitle": ["node js.yml 파일 생성이후 github.io page 레포에 연결", "main Branch Commit시에만 deploy"]
+          },
+          {
+            "title": "도메인 생성 및 연결",
+            "subTitle": [
+              "도메인 구매 이후 DNS 설정 및 연결",
+              "deploy 할 때 마다 domain 변경방지로 static 파일 CNAME 도메인 추가"
+            ]
           }
         ]
       }

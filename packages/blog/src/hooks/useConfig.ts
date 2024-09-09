@@ -39,6 +39,7 @@ interface ReturningUseConfig {
           endDate: string | null
           which: string[]
           url: string | null
+          techStacks: string[]
         }[]
       }[]
     }
@@ -46,6 +47,7 @@ interface ReturningUseConfig {
       title: string
       list: {
         title: string
+        techStacks: string[]
         url: string | null
         descriptions: {
           title: string

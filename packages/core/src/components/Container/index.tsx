@@ -21,6 +21,7 @@ export const Container = styled.div<Partial<ContainerProps>>`
     ${row
       ? css`
           flex-direction: row;
+
           & > *:not(:first-of-type) {
             margin-left: calc(${gap} * 1rem);
           }

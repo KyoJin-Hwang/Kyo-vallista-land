@@ -130,6 +130,13 @@ const ResumePage: VFC = () => {
                             {it__}
                           </Text>
                         ))}
+                        <Container row>
+                          {it_.techStacks?.map((it__, idx) => (
+                            <Text as={'span'} weight={600} size={16} color={'#0070F3'}>
+                              {it__}
+                            </Text>
+                          ))}
+                        </Container>
                         <Spacer y={1} />
                         <ul>
                           {it_.which?.map((it__, idx) => (
@@ -149,7 +156,7 @@ const ResumePage: VFC = () => {
         </Contents>
       </Box>
       {/* 사이드 */}
-      {/* <Box id='side'>
+      <Box id='side'>
         <Contents>
           <Container>
             <Text size={40} weight={800}>
@@ -169,7 +176,7 @@ const ResumePage: VFC = () => {
                           <Text size={16}>{it_.title}</Text>
                           <SubTitleText>
                             {it_.subTitle.map((it__, idx) => (
-                              <Text size={14} key={idx}>
+                              <Text size={16} key={idx}>
                                 {it__}
                               </Text>
                             ))}
@@ -184,7 +191,7 @@ const ResumePage: VFC = () => {
             ))}
           </Container>
         </Contents>
-      </Box> */}
+      </Box>
       {/* 스킬 */}
       <Box id='skills'>
         <Contents>
