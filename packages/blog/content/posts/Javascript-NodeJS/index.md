@@ -17,53 +17,39 @@ series: 'Javascript'
 - Chrome V8 JavaScript 엔진으로 빌드된 Javascript 런타임
 - 자바스크립트언어로 동작하는 컴퓨터 환경이다.
 
-<br />
-
 ## 📚카테고리 (Category)
 
-- [설치]
-- [NPM 개요]
-  - [NPM이란]
-- [NPM 및 Package.json]
-  - [노드버전 및 사용방법]
-  - [NPM 본격적으로 사용해보기]
-  - [NPM Install]
-  - [예제: Parcel 설치해보기]
-  - [gitignore]
-  - [개발서버 실행과빌드]
+- [설치](#1️⃣-설치)
+- [NPM 개요](#2️⃣-NPM-개요)
+- [NPM 및 Package.json](#3️⃣-npm-및-package.json)
+
+## 1️⃣ 설치
+
+LTS(Long Term Support)란? 말 그대로 장기 `지원되는 버전` 을 의미하며 `안정적이며 신뢰도`를 보장한다
+
+- [Node 설치](https://nodejs.org/en)
 
 <br/>
 
-# 1️⃣설치
+[📚Move](<#📚카테고리-(Category)>)
 
-![image](https://github.com/KyoJin-Hwang/front-javascript-study/assets/84490050/0e7ce234-32e3-4740-b1fb-3cb5db5e9ebc)
-![image](https://github.com/KyoJin-Hwang/front-javascript-study/assets/84490050/640570e8-029c-4209-b69c-7aa3920dd535)
+## 2️⃣ NPM 개요
 
-LTS(Long Term Support)란? 말 그대로 장기 `지원되는 버전` 을 의미한다
+NPM ( Node Package Manager) 은 전세계의 개발자들이 만든 다양한 기능(패키지, 모듈)들을 관리.
 
-- 안정적이며 신뢰도를 보장한다.
-- LTS가 최고다❗❗
-
-**[⬆ back to top](#카테고리-category)**
-
-<br/>
-
-# 2️⃣NPM 개요
-
-### 2-1 NPM ( Node Package Manager) 은 전세계의 개발자들이 만든 다양한 기능(패키지, 모듈)들을 관리.
-
-- yarn, npm 등 모듈이나 기능을 다운받을 수 있다. ( ex) npm install parcel )
+- yarn, npm 등 모듈이나 기능을 다운받을 수 있다.
+  - 예시 : `npm install parcel`
 - 규모 있는 프로젝트와 협업을 위해서 사용된다.
 
-**[⬆ back to top](#카테고리-category)**
-
 <br/>
 
-# 3️⃣npm 및 package.json
+[📚Move](<#📚카테고리-(Category)>)
 
-### 3-1 노드 버젼 및 사용방법
+## 3️⃣ npm 및 package.json
 
-```powershell
+> **노드 버젼 및 사용방법**
+
+```javascript {numberLines}
 // 현재 적용중인 노드 버젼을 확인할 수 있다.
 node --version || node -v
 
@@ -82,71 +68,50 @@ macOS => Cmd + k
 Windows => clear
 ```
 
-![image](https://github.com/KyoJin-Hwang/front-javascript-study/assets/84490050/87f3a2a4-66ee-4869-b584-4fd60377b2a6)
+> **NPM 본격적으로 사용해보기**
 
-**[⬆ back to top](#카테고리-category)**
-
-<hr/>
-
-### 3-2 NPM 본격적으로 사용해보기
-
-```powershell
+```javascript {numberLines}
 // init (초기화) 맨처음에 프로젝트 시작할때 사용한다.
 npm init
-
 npm init -y
 ```
 
-여러 가지 질문에 답하면서(옵션을 추가하면) **`package.json`** 파일을 작성한다.
-
+여러 가지 질문에 답하면서(옵션을 추가하면) `package.json` 파일을 작성한다.
 각 질문을 넘어가면 기본값을 사용한다.
+질문 없이 바로 시작하고 싶다면 `-f(--force)`, `-y(--yes)` 중 하나의 플래그를 추가하는 것을 추천
+만약  `package.json` 파일을 가지고 있다면, 먼저 그 파일을 읽고 난 후 옵션을 기본값으로 사용한다.
 
-질문 없이 바로 시작하고 싶다면 **`-f`**(**`--force`**), **`-y`**(**`--yes`**) 중 하나의 플래그를 추가하는 것을 추천
+> **NPM Install**
 
-만약  **`package.json`** 파일을 가지고 있다면, 먼저 그 파일을 읽고 난 후 옵션을 기본값으로 사용한다.
-
-**[⬆ back to top](#카테고리-category)**
-
-<hr/>
-
-### 3-3 NPM Install
-
-```powershell
+```javascript {numberLines}
 // npm i || npm install
 // package.json , lock.json 에 있는 모듈을 다운받는다
 npm i
 
-// npm install 과 npm i 는 같다
-
 npm i lodash
-
 ```
 
 ![image](https://github.com/KyoJin-Hwang/front-javascript-study/assets/84490050/93796423-78f9-4b12-bbba-d6dc75d82910)
 ![image](https://github.com/KyoJin-Hwang/front-javascript-study/assets/84490050/aafa7579-d890-4d08-b74d-6379ea761fab)
 
-- node_modules 와 package-lock.json 이 생긴다
-- npm i lodash 설치한 `lodash` 는 node_modules 안에 들어 가 있다.
+`node_modules` 와 `package-lock.json` 이 생긴다
 
-**[⬆ back to top](#카테고리-category)**
+npm i lodash 설치한 `lodash` 는 `node_modules` 안에 들어 가 있다.
 
-<hr/>
+<br/>
 
-### 3-3 예제로 Parcel 설치해보기
+> `번들러 (Bundler) ?`
+>
+> - 여러 가지 패키지들을 실제 웹사이트에 올라갈 수 있도록 묶어주는 역할
+> - Webpack, Borserify, Parcel 대표적으로 이렇게 있다.
+> - 웹사이트에서 직접적으로 동작하지 않는다. 그래서 `—save -dev` 라는 플래그를 붙여준다
 
-❗❗ 잠깐 Parcel 시작하기전 뜬금없지만 번들러란? 알고있는가?
+> 예제로 Parcel 설치해보기
 
-`번들러 (Bundler) ?`
-
-- 여러 가지 패키지들을 실제 웹사이트에 올라갈 수 있도록 묶어주는 역할
-- Webpack, Borserify, Parcel 대표적으로 이렇게 있다.
-- 웹사이트에서 직접적으로 동작하지 않는다. 그래서 `—save -dev` 라는 플래그를 붙여준다
-
-```powershell
+```javascript {numberLines}
+// --save-dev 앞 뒤 위치상관없음
 npm i parcel --save-dev
 npm i --save-dev parcel
-
---save-dev 앞 뒤 위치상관없음
 ```
 
 ![image](https://github.com/KyoJin-Hwang/front-javascript-study/assets/84490050/93f44139-1b6d-49ab-b524-c329cc973e6d)
@@ -154,32 +119,26 @@ npm i --save-dev parcel
 - dependencies에는 애플리케이션 동작과 직접적으로 연관된 라이브러리를 설치하고 ( 실제 브라우저에서 배포해서도 작동 )
 - devDependencies에는 개발할 때 필요한 라이브러리를 설치한다. ( 개발용 )
 
-**[⬆ back to top](#카테고리-category)**
-
 <br/>
 
-### 3-4 .gitignore
+> .gitignore
 
-```powershell
+```javascript {numberLines}
 // 깃이그노어 생성
-touch .gitignore
+touch.gitignore
 ```
 
-`이그노어 생성이유 ?`
+이그노어가 필요한 이유
 
 - npm i 로 node_modules 를 언제나 생성할 수 있기 때문에
+- 보안과 개인정보 보호 ( `토큰`, `API키` )
+- 원하지 않는 파일이 업로드 되는것을 방지
 
-![image](https://github.com/KyoJin-Hwang/front-javascript-study/assets/84490050/7fda1361-034b-46df-a0eb-218de3036d12)
-
-- 버전관리 하지 않을 경우
-
-**[⬆ back to top](#카테고리-category)**
-
-<br/>
-
-### 3-5 Parcel, 개발 서버 실행과 빌드
+> Parcel, 개발 서버 실행과 빌드
 
 **실행방법**
+
+<br/>
 
 ![image](https://github.com/KyoJin-Hwang/front-javascript-study/assets/84490050/df578dd6-3e67-42a4-91aa-0b6917bbf6fc)
 ![image](https://github.com/KyoJin-Hwang/front-javascript-study/assets/84490050/8b6c4cde-e33c-41e3-bed9-2ce30b91bf52)
@@ -188,36 +147,34 @@ touch .gitignore
 2. dev 안의 parcel ./index.html ( 동작할 html을 적어준다. )
 3. 터미널에서 npm run dev를 한다.
 
-`첫번째 Error 발생`
+<br/>
+
+**첫번째 Error 발생**
+
+<br/>
 
 ![image](https://github.com/KyoJin-Hwang/front-javascript-study/assets/84490050/62a5824a-49ff-4c09-9447-8b3cb84b7ed2)
 
 - script를 불러오는 html에 module 이라는 타입이 없어서이다 추가해준다.
 
-<hr/>
-
-`두번째 Error 발생`
-
-![image](https://github.com/KyoJin-Hwang/front-javascript-study/assets/84490050/e1e31aa5-c861-4004-83a8-7bbf67c230ff)
-
-- Parcel 이 ts를 가지고있어서 사용할 수있음 ( 원래는 ts 따로 적용해야함 )
-
-<hr/>
+```html <numberLines>
+<!-- parcel 이 ts 를 포함하여 main.ts로 수정 -->
+<script type="module" src="./main.ts"></script>
+```
 
 **빌드방법**
 
+<br/>
+
 ![image](https://github.com/KyoJin-Hwang/front-javascript-study/assets/84490050/5667974b-a1cb-436a-b6fa-e492d586a123)
 
-Error 해결
-
 ![image](https://github.com/KyoJin-Hwang/front-javascript-study/assets/84490050/2579938d-d768-45a7-b0f3-23f9e5dfa4fa)
+![image](https://github.com/KyoJin-Hwang/front-javascript-study/assets/84490050/6b137925-d492-4891-bb5d-95bf7768b10b)
 
 1. build 라는 scripts 생성한다.
 2. 터미널에 npm run build를 실행한다.
 3. 완료
 
-![image](https://github.com/KyoJin-Hwang/front-javascript-study/assets/84490050/6b137925-d492-4891-bb5d-95bf7768b10b)
-
-**[⬆ back to top](#카테고리-category)**
-
 <br/>
+
+[📚Move](<#📚카테고리-(Category)>)

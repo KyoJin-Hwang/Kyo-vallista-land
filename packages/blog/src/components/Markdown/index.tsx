@@ -2,6 +2,7 @@ import { useLocation } from '@reach/router'
 import { useEffect, useMemo, useRef, VFC } from 'react'
 
 import * as Styled from './Markdown.style'
+import { CloudLightning } from '@Kyo/vallista-core/lib/components/Icon/assets'
 
 interface MarkdownProps {
   html: string
