@@ -29,7 +29,7 @@ const IndexPage: VFC<PageProps<IndexQuery>> = (props) => {
           <SubTitle>
             <Text as='p' size={20} weight={400} lineHeight={40}>
               대한민국 에서 <strong>소프트웨어 엔지니어</strong>로 {MyState[1]} 글 쓰는 것을 좋아하며, 개발을 맛있게
-              코딩 하고싶은 <strong>개발자</strong>입니다! 블로그에 글 열심히 작성할게요<EmojiText>😿</EmojiText> 많은{' '}
+              하고싶은 <strong>개발자</strong>입니다! 블로그에 글 열심히 작성할게요<EmojiText>😿</EmojiText> 많은{' '}
               <strong>피드백</strong> 부탁드려요<EmojiText>😺</EmojiText>
               <br />
               <strong>2024.09 현재 관심사 :</strong> 구직 및 이력서 작성 <EmojiText>📩</EmojiText>
