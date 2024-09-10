@@ -147,7 +147,7 @@ console.log(user)
 ```
 
 ```javascript {numberLines}
-// 함수 내부에서 this 라는 키워드로 만드는 방식
+// 함수 내부에서 this 키워드로 만드는 방식
 function User() {
   this.name = 'kyojin'
   this.age = 27
