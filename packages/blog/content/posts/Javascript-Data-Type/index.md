@@ -35,7 +35,7 @@ draft: false
 - [배열 (Array)](<#배열-Array-(참조형)>)
 - [객체 (Object)](<#객체-Object-(참조형)>)
 - [함수 (Function)](#함수-Function)
-- [참과 거짓 (Truthy-Falsy)](<#참과-거짓(Truthy-&-Falsy)>)
+- [참과 거짓](#참과-거짓)
 
 ## String, Number(원시형)
 
@@ -147,7 +147,7 @@ console.log(user)
 ```
 
 ```javascript {numberLines}
-// 함수 내부에서 this 키워드로 만드는 방식
+// 함수 내부에서 this 라는 키워드로 만드는 방식
 function User() {
   this.name = 'kyojin'
   this.age = 27
@@ -257,7 +257,7 @@ a('hi')
 
 <br />
 
-## 참과 거짓(Truthy & Falsy)
+## 참과 거짓
 
 ```javascript {numberLines}
 // 참과 거짓(Truthy & Falsy)
