@@ -82,6 +82,8 @@ npm init -y
 질문 없이 바로 시작하고 싶다면 `-f(--force)`, `-y(--yes)` 중 하나의 플래그를 추가하는 것을 추천
 만약  `package.json` 파일을 가지고 있다면, 먼저 그 파일을 읽고 난 후 옵션을 기본값으로 사용한다.
 
+<br/>
+
 > **NPM Install**
 
 ```javascript {numberLines}
@@ -107,7 +109,7 @@ npm i lodash 설치한 `lodash` 는 `node_modules` 안에 들어 가 있다.
 > - Webpack, Borserify, Parcel 대표적으로 이렇게 있다.
 > - 웹사이트에서 직접적으로 동작하지 않는다. 그래서 `—save -dev` 라는 플래그를 붙여준다
 
-> 예제로 Parcel 설치해보기
+> **예제로 Parcel 설치해보기**
 
 ```javascript {numberLines}
 // --save-dev 앞 뒤 위치상관없음
@@ -122,7 +124,7 @@ npm i --save-dev parcel
 
 <br/>
 
-> .gitignore
+> **.gitignore**
 
 ```javascript {numberLines}
 // 깃이그노어 생성
@@ -135,7 +137,9 @@ touch.gitignore
 - 보안과 개인정보 보호 ( `토큰`, `API키` )
 - 원하지 않는 파일이 업로드 되는것을 방지
 
-> Parcel, 개발 서버 실행과 빌드
+<br/>
+
+> **Parcel, 개발 서버 실행과 빌드**
 
 **실행방법**
 
