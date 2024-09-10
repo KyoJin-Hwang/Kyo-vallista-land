@@ -1,16 +1,17 @@
 ---
 title: 기초 Node.js 의 이해
 tags:
-  - Javascript 복습
+  - Javascript
 image: ./assets/0.png
 date: 2024-09-09 14:31:00
 draft: false
-series: 'Javascript'
 ---
 
 ![banner](./assets/0.png)
 
 `by Kyojin Hwang`
+
+<br/>
 
 ## Node.js
 
