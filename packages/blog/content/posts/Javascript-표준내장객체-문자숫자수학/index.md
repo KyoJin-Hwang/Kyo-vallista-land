@@ -24,13 +24,14 @@ series: 표준 내장 객체
   - [📌replace](<#%3Ccode%3E📌replace()%3C/code%3E>)
   - [📌slice](<#%3Ccode%3E📌slice()%3C/code%3E>)
   - [📌split](<#%3Ccode%3E📌split()%3C/code%3E>)
-  - [📌toLowerCase, toUpperCase](<#%3Ccode%3E📌-toLowerCase()-,-toUpperCase()%3C/code%3E>)
+  - [📌toLowerCase](<#%3Ccode%3E📌-toLowerCase()%3C/code%3E>)
+  - [📌toUpperCase](<#%3Ccode%3E📌toUpperCase()%3C/code%3E>)
   - [📌trim](<#%3Ccode%3E📌trim()%3C/code%3E>)
 - [📝Number_Method](#📝-Number-Method)
   - [📌toFixed](<#%3Ccode%3E📌toFixed()%3C/code%3E>)
   - [📌toLocaleString](<#%3Ccode%3E📌toLocaleString()%3C/code%3E>)
-  - [📌NumberisInteger](<#%3Ccode%3E📌Number.isInteger()%3C/code%3E>)
-  - [📌Numberparseint-Or-Parseint](<#%3Ccode%3E📌Number.parseInt()-or-parseInt()%3C/code%3E>)
+  - [📌isInteger](<#%3Ccode%3E📌isInteger()%3C/code%3E>)
+  - [📌parseInt](<#%3Ccode%3E📌parseInt()%3C/code%3E>)
 - [📝Math_Method](#📝-Math-Method)
   - [📌abs](<#%3Ccode%3E📌abs()%3C/code%3E>)
   - [📌ceil](<#%3Ccode%3E📌ceil()%3C/code%3E>)
@@ -310,7 +311,7 @@ console.log(fruit.split(',', 3)) // ['Melon', ' Apple', ' Banana']
 
 <br/>
 
-### `📌 toLowerCase() , toUpperCase()`
+### `📌 toLowerCase()`
 
 ```javascript {numberLines}
 // .toLowerCase()
@@ -325,6 +326,12 @@ const str = 'APPLE, Banana, CHeRRy'
 
 console.log(str.toLowerCase()) // apple, banana, cherry
 ```
+
+> [📚Move](<#📚카테고리-(Category)>)
+
+<br/>
+
+### `📌toUpperCase()`
 
 ```javascript {numberLines}
 // .toUpperCase()
@@ -422,7 +429,7 @@ console.log(`${num.toLocaleString()}원`) // 1,000,000원
 
 <br/>
 
-### `📌Number.isInteger()`
+### `📌isInteger()`
 
 ```javascript {numberLines}
 // .Number.isInteger()
@@ -449,7 +456,7 @@ console.log(Number.isInteger(pi)) // false
 
 <br/>
 
-### `📌Number.parseInt() or parseInt()`
+### `📌parseInt()`
 
 ```javascript {numberLines}
 // .parseInt()
