@@ -1,5 +1,5 @@
 import { graphql } from 'gatsby'
-import { useCallback, VFC } from 'react'
+import { useCallback, useEffect, useState, VFC } from 'react'
 import { PageProps, PostQuery } from 'types/type'
 
 import { Comment } from '../components/Comment'
@@ -8,6 +8,7 @@ import { PostHeader } from '../components/PostHeader'
 import { Seo } from '../components/Seo'
 import { Series } from '../components/Series'
 import { useConfig } from '../hooks/useConfig'
+import { Remocon } from '../components/Remocon'
 
 const Post: VFC<PageProps<PostQuery>> = (props) => {
   const { profile } = useConfig()
@@ -15,9 +16,12 @@ const Post: VFC<PageProps<PostQuery>> = (props) => {
   const { nodes, group: seriesGroup } = allMarkdownRemark
   const { timeToRead, html } = props.data.markdownRemark
   const { title, date, image, tags, series } = props.data.markdownRemark.frontmatter
-
+  const [search, setSearch] = useState([''])
+  const [isReadyRemocon, setIsReadyRemocon] = useState(false)
   const cachedFilterSeries = useCallback(getFilteredSeries, [props.data])
-
+  useEffect(() => {
+    setIsReadyRemocon(true)
+  }, [search])
   return (
     <div>
       <Seo name={title} image={image?.publicURL} isPost />
@@ -31,7 +35,8 @@ const Post: VFC<PageProps<PostQuery>> = (props) => {
       >
         {series && seriesGroup && <Series name={series} posts={cachedFilterSeries()} />}
       </PostHeader>
-      <Markdown html={html} />
+      <Markdown html={html} setSearch={setSearch} />
+      {isReadyRemocon && <Remocon name={search} />}
       <section id='comments'></section>
       <Comment />
     </div>

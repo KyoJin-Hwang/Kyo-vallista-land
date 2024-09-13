@@ -26,7 +26,7 @@ draft: false
 
 ## 📌 Prototype
 
-### Prototype이란?🧐
+**Prototype이란?🧐**
 
 - 자바스크립트의 모든 객체는 자신의 `부모 역할`을 담당하는 `객체와 연결`되어 있다. 그리고 이것은 마치<br/>`객체 지향의 상속 개념`과 같이 부모 객체의 `프로퍼티` 또는 `메소드`를 `상속`받아 사용할 수 있게 한다.<br/>이러한 부모 객체를 `Prototype(프로토타입) 객체` 또는 줄여서 `Prototype(프로토타입)`이라 한다.
 
@@ -103,7 +103,7 @@ console.log(kyo2.getFullName());
 
 ## 📌 Class 기본문법
 
-### Class란?🧐
+**Class란?🧐**
 
 - 클래스의 이름은 `Korea`와 같이 대문자로 시작한다.
 - 클래스는 반드시 정의한 뒤에 사용할 수 있다.
@@ -111,7 +111,7 @@ console.log(kyo2.getFullName());
 - 클래스를 통해 생성된 객체를 `인스턴스(instance)`라고 부른다.
   ex) 인스턴스 = new Class()
 
-### `prototype`
+**prototype**
 
 ```javascript {numberLines}
 function User(first, last) {
@@ -133,7 +133,7 @@ console.log(kyo.getFullName()) // Kyo Jin
 console.log(owen.getFullName()) // Owen Cold
 ```
 
-### `class`
+**class**
 
 ```javascript {numberLines}
 class User {
@@ -165,7 +165,9 @@ console.log(owen.getFullName()) // Owen Cold
 
 Getter와 Setter 은 함수 호출 형식이 아닌, 일반 프로퍼티처럼 접근해서 사용된다.
 
-### `예시1`
+<br/>
+
+**예시1**
 
 - New라는 키워드를 통해서 생성자 함수로 예시의 User클래스를 호출할 때 최초로 만들어지고
   그 다음부터는 firstName과 lastName이 바뀌더라도 전혀 변화가 되지않는다.
@@ -193,7 +195,7 @@ console.log(kyo.getFullName()); // Show Jin
 
 ```
 
-### `예시1을 업그레이드하기 위한 Getter Setter `
+**예시1을 업그레이드하기 위한 Getter Setter**
 
 ```javascript {numberLines}
 class User {
@@ -222,13 +224,17 @@ console.log(kyo.fullName) // Show Me
 
 ![alt text](./assets/1.png)
 
-### 예시1 업그레이드 사진설명
+<br/>
+
+**예시1 업그레이드 사진설명**
 
 1. 21번코드줄에서의 `kyo.fullName = "Show Me"`는 setfullName에 value로 들어간다.
 2. 배열 구조분해할당으로 인해 this.firstName에는 `Show` this.lastName에는 `Me`가 들어간다.
 3. 22번코드줄에서의 fullName은 getfullName이 되며 아래의 set을 조회한다.
 
-### Setter의 무한루프
+<br/>
+
+**Setter의 무한루프**
 
 - 접근자 프로퍼티의 이름을 중복이 되도록 하면 안된다.
 
@@ -274,11 +280,13 @@ console.log(user.name); // owen
 
 ## 📌 정적메소드
 
-### 정적 메소드란?🧐
+**정적 메소드란?🧐**
 
 - `정적 메소드`는 `클래스`로 호출한다 vs `프로토타입 메소드`는 `인스턴스`로 호출한다.
 
-### `클래스 vs 인스턴스 메소드 차이`
+<br/>
+
+**클래스 vs 인스턴스 메소드 차이**
 
 ```javascript {numberLines}
 class Phone {
@@ -301,7 +309,7 @@ Phone.isComplain()
 user.introduce()
 ```
 
-### `static 사용법`
+**static 사용법**
 
 ```javascript {numberLines}
 class User {
@@ -365,7 +373,7 @@ console.log(User.isUser(roy)); // false
 
 ## 📌 상속과 instanceof
 
-### 상속
+**상속**
 
 - `클래스 확장하기` : extends 키워드를 사용하여 확장한다.
 - `생성자 오버라이딩` : this를 사용하기 전에 Child 생성자 안에서 super()로 부모 생성자를 반드시 호출해야 합니다.
@@ -453,10 +461,12 @@ const boat = new Boat(3000, 5)
 console.log(boat) // Boat {speed: 0, acceleration: 5, price: 3000, motor: 1}
 ```
 
-### instanceof
+**instanceof**
 
 - 키워드 앞쪽에 있는 데이터가 키워드 뒤쪽에 있는 클래스에서
   인스턴스로 만들어져 있는지 확인하는 것
+
+<br/>
 
 **예제**
 

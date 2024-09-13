@@ -1,11 +1,11 @@
 import { useLocation } from '@reach/router'
-import { useEffect, useMemo, useRef, VFC } from 'react'
+import { Dispatch, SetStateAction, useEffect, useMemo, useRef, VFC } from 'react'
 
 import * as Styled from './Markdown.style'
-import { CloudLightning } from '@Kyo/vallista-core/lib/components/Icon/assets'
 
 interface MarkdownProps {
   html: string
+  setSearch: Dispatch<SetStateAction<string[]>>
 }
 
 export const Markdown: VFC<MarkdownProps> = (props) => {
@@ -24,13 +24,14 @@ export const Markdown: VFC<MarkdownProps> = (props) => {
   useEffect(() => {
     // heading 전부 체크해서 해시에 저장할 수 있는 버튼을 추가한다.
     // 버튼을 클릭하면 이동되도록 구현.
+    const names: string[] = []
     Array.from(ref.current?.getElementsByTagName('*') ?? [])
       .filter((it) => Number(it.tagName?.[1] ?? '999') < 6)
       .forEach((it) => {
         if (it.getElementsByTagName('a').length > 0) return
 
         const name = it.innerHTML.replaceAll(' ', '-')
-
+        names.push(name)
         it.innerHTML = `
           <a href="#${name}" aria-label="${name} permalink">
             <svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16" 
@@ -50,6 +51,7 @@ export const Markdown: VFC<MarkdownProps> = (props) => {
         `
         it.id = name
       })
+    props.setSearch(names)
 
     // 페이지가 로드되고 나서 선택된 해딩으로 이동한다.
     window.onload = () => {
