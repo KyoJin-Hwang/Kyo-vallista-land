@@ -1,5 +1,3 @@
-import { css } from '@emotion/react'
-import { Container } from '@Kyo/vallista-core'
 import { FC, useCallback, useEffect, useState } from 'react'
 import * as Styled from './Remocon.style'
 
@@ -29,7 +27,6 @@ export const Remocon: FC<RemoconProps> = (props) => {
   useEffect(() => {
     scrollY >= 682 ? setHide(false) : setHide(true)
   }, [scrollY])
-  console.log(fold)
   return (
     <Styled._Container>
       {hide ? null : !fold ? (

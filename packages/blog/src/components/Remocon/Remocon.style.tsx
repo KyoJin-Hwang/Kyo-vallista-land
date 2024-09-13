@@ -6,10 +6,12 @@ export const _Container = styled.div`
   right: 0;
   top: 8rem;
   width: 300px;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 `
 export const _FoldButton = styled.button<{ fold: boolean }>`
   position: absolute;
-
   width: 50px;
   height: 24px;
   top: 10px;
@@ -35,10 +37,6 @@ export const _ListContainer = styled.div<{ fold: boolean }>`
     background: ${theme.colors.PRIMARY.ACCENT_1};
     color: ${theme.colors.PRIMARY.BACKGROUND};
   `}
-  @media screen and (max-width: 1024px) {
-    display: none;
-  }
-  transition: border 2s ease-in, padding 2s ease-in;
 `
 export const _List = styled.ol<{ fold: boolean }>`
   display: flex;
