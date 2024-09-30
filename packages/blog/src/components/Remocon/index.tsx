@@ -8,7 +8,7 @@ interface RemoconProps {
 export const Remocon: FC<RemoconProps> = (props) => {
   const [scrollY, setScrollY] = useState(window.scrollY)
   // 모달 boolean
-  const [fold, setFold] = useState(false)
+  const [fold, setFold] = useState(true)
   // 모달 hide boolean
   const [hide, setHide] = useState(true)
 
@@ -38,7 +38,10 @@ export const Remocon: FC<RemoconProps> = (props) => {
           <Styled._XButton onClick={() => setFold(false)}>X</Styled._XButton>
           <Styled._List fold>
             {props.name.map((el) => {
-              const cleanedEl = el.replace(/<\/?code>/g, '').replace(/-/g, ' ')
+              const cleanedEl = el
+                .replace(/<\/?code>/g, '')
+                .replace(/-/g, ' ')
+                .replace(/<\/?strong>/g, '')
               return (
                 <Styled._Item>
                   <Styled._Link href={`#${el}`} aria-label={el}>
