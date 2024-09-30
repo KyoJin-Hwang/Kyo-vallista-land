@@ -6,6 +6,7 @@ export const _Container = styled.div`
   right: 0;
   top: 8rem;
   width: 300px;
+  z-index: 999;
   @media screen and (max-width: 1024px) {
     display: none;
   }
