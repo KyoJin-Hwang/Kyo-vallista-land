@@ -6,7 +6,6 @@ interface RemoconProps {
 }
 
 export const Remocon: FC<RemoconProps> = (props) => {
-  console.log('test')
   const [scrollY, setScrollY] = useState(window.scrollY)
   // 모달 boolean
   const [fold, setFold] = useState(true)
