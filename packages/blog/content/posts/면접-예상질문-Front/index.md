@@ -1,5 +1,5 @@
 ---
-title: 기술면접 예상 질문 (CS)
+title: 기술면접 예상 질문 (Front)
 tags:
   - 프론트엔드
 image: ./assets/0.png
@@ -15,11 +15,11 @@ draft: false
 
 ## 📚카테고리 (Category)
 
-- [📌 Computer Science](#📌-Computer-Science)
+- [📌 Front](#📌-Front)
   - [🔓 CORS란 무엇인가요?](#<strong>%F0%9F%94%93-CORS란-무엇인가요?</strong>)
   - [🍪 Cookie, SessionStorage, LocalStorage의 차이점을 설명](#<strong>🍪-Cookie,-SessionStorage,-LocalStorage의-차이점을-설명</strong>)
 
-## 📌 Computer Science
+## 📌 Front
 
 ### **🔓 CORS란 무엇인가요?**
 
