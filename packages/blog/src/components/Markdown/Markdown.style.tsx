@@ -49,6 +49,23 @@ export const _Contents = styled(_Wrapper)`
       /* margin: 0 0 2rem; */
     }
 
+    table,
+    thead,
+    th,
+    td {
+      border: 1px solid;
+      text-align: center;
+    }
+
+    th {
+      font-weight: bold;
+    }
+
+    th,
+    td {
+      padding: 10px;
+    }
+
     center {
       color: ${theme.colors.PRIMARY.ACCENT_5};
       font-size: 0.8rem;
