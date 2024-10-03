@@ -8,7 +8,7 @@ interface RemoconProps {
 export const Remocon: FC<RemoconProps> = (props) => {
   const [scrollY, setScrollY] = useState(window.scrollY)
   // 모달 boolean
-  const [fold, setFold] = useState(true)
+  const [fold, setFold] = useState(false)
   // 모달 hide boolean
   const [hide, setHide] = useState(true)
 

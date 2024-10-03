@@ -33,6 +33,9 @@ draft: false
   - [🦴 다국어 페이지를 제공하는 여러방법에 대해서 설명](#<strong>🦴-다국어-페이지를-제공하는-여러방법에-대해서-설명</strong>)
   - [🦴 브라우저 렌더링 과정을 설명해주세요.](#<strong>🦴-브라우저-렌더링-과정을-설명해주세요.</strong>)
   - [🦴 Reflow와 Repaint 설명해주세요.](#<strong>🦴-Reflow와-Repaint-설명해주세요.</strong>)
+  - [🦴 <script>, <script async>와 <script defer> 차이점을 설명해주세요.](#<strong>🦴-<code><script></code>,-<code><script-async></code>와-<code><script-defer></code>-차이점을-설명해주세요.</strong>)
+  - [🦴 data-속성은 무엇을 하는 것인가요? 사용했을 때 이점은 무엇인가요?](#<strong>🦴-data-속성은-무엇을-하는-것인가요?-사용했을-때-이점은-무엇인가요?</strong>)
+  - [🦴 Progressive rendering이란 무엇인가요?](#<strong>🦴-Progressive-rendering이란-무엇인가요?</strong>)
 
 ## 📌 Computer Science
 
@@ -234,10 +237,11 @@ draft: false
 - defer : HTML 파싱이 끝날 때까지 스크립트를 다운로드한 후 실행한다.
 - async : 독립적인 스크립트에 적합하다.
 
-**CSS @import 또는 `<link>` 태그**
+**link 태그**
 
 - `<head>` 태그 안에 위치시키는 것이 가장 적절합니다.
-- CSS 파일을 먼저 로드하여 페이지가 로드될 때 바로 스타일링이 적용되도록 해야 하기 떄문이다.
+- HTML 파일과 동시에 CSS 파일을 점진적으로 렌더링될 수 있기 떄문이다.
+- 사이트 성능 점수의 사이트 최적화
 
 ### **🦴 img 태그에서 alt 속성을 사용하는 이유는?**
 
@@ -305,5 +309,26 @@ draft: false
 - Reflow만 수행되면 실제 화면에는 반영되지 않기 때문에 다시 Painting이 일어나야 한다. 이 과정을 Repaint라고 한다.
   - `Painting` : 레이아웃 단계에서 계산된 위치와 크기를 기반으로 실제로 화면에 픽셀을 그리는 과정.
 - Reflow가 발생하지 않아도 background-color 나 opacity 같이 레이아웃에 영향을 주지 않는 스타일 속성이 변했을 때는 reflow 없이 repaint만 일어난다.
+
+### **🦴 `<script>`, `<script async>`와 `<script defer>` 차이점을 설명해주세요.**
+
+| 속성                         | 다운로드 시점     | 실행 시점                  | HTML 파싱 중단     |
+| ---------------------------- | ----------------- | -------------------------- | ------------------ |
+| `<script>` in `<head>`       | 즉시              | 다운로드 완료 후 즉시 실행 | 중단됨             |
+| `<script>` in `<body>` 끝    | HTML 파싱 완료 후 | 다운로드 완료 후 즉시 실행 | 중단되지 않음      |
+| `<script async>` in `<head>` | 병렬로 다운로드   | 다운로드 완료 후 즉시 실행 | 중단됨 (즉시 실행) |
+| `<script defer>` in `<head>` | 병렬로 다운로드   | HTML 파싱이 완료된 후 실행 | 중단되지 않음      |
+
+### **🦴 data-속성은 무엇을 하는 것인가요? 사용했을 때 이점은 무엇인가요?**
+
+- data- 속성은 커스텀 데이터를 쉽게 접근할 수 있게 해 주며, HTML과 자바스크립트 간의 데이터 통신을 간단하게 처리할 수 있다.
+
+### **🦴 Progressive rendering이란 무엇인가요?**
+
+- 콘텐츠를 가능한 빠르게 표시하기 위해 웹 페이지의 성능을 향상시키는데 사용되는 기술.
+- 대규모 웹사이트나 네트워크 속도가 느린환경에서 사용하기 적합.
+- 예시
+  - Lazy Loading
+  - 스켈레톤 UI
 
 [📚Move](<#📚카테고리-(Category)>)
