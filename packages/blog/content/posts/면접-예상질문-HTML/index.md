@@ -1,5 +1,5 @@
 ---
-title: 기술면접 예상 질문 (HTML)
+title: 기술면접 예상 질문(HTML)
 tags:
   - 프론트엔드
 image: ./assets/0.png
