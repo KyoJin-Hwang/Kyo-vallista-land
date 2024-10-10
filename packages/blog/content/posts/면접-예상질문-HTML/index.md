@@ -5,6 +5,7 @@ tags:
 image: ./assets/0.png
 date: 2024-10-01 18:10:00
 draft: false
+series: FE기술면접
 ---
 
 ![banner](./assets/0.png)
@@ -32,6 +33,7 @@ draft: false
   - [🦴 html에서 lang의 용도는 무엇인가요?](#<strong>🦴-html에서-lang의-용도는-무엇인가요?</strong>)
   - [🦴 `<script>, <script async>와 <script defer>` 차이점을 설명해주세요.](#<strong>🦴-script-태그와-link-태그의-위치로-적절한-위치와-그-이유는?</strong>)
   - [🦴 data-속성은 무엇을 하는 것인가요? 사용했을 때 이점은 무엇인가요?](#<strong>🦴-data-속성은-무엇을-하는-것인가요?-사용했을-때-이점은-무엇인가요?</strong>)
+  - [🦴 Attribute vs Property 정의 차이](#<strong>🦴-Attribute-vs-Property-정의-차이</strong>)
 
 ## 📌 HTML
 
@@ -224,5 +226,28 @@ draft: false
 ### **🦴 data-속성은 무엇을 하는 것인가요? 사용했을 때 이점은 무엇인가요?**
 
 - data- 속성은 커스텀 데이터를 쉽게 접근할 수 있게 해 주며, HTML과 자바스크립트 간의 데이터 통신을 간단하게 처리할 수 있다.
+
+### **🦴 Attribute vs Property 정의 차이**
+
+- 어트리뷰트는 HTML의 속성이다. 엘리먼트에 아이디나 클래스와 같은 추가적인 정보를 일컫는다고 보면 된다
+- 프로퍼티는 DOM의 속성이다. 즉, html의 attribute를 DOM 내에서 대신해서 표현
+
+```html {numberLines}
+<!-- div 엘리먼트의 id와 class 속성은 Attribute 이다 -->
+<div id="inpa" class="bold"></div>
+
+<!-- input 엘리먼트의 type과 value 속성은 Attribute 이다 -->
+<input type="text" value="0" />
+```
+
+```html {numberLines}
+<div class="my-class" style="color: red;"></div>
+
+<script>
+  // className과 style은 Property 이다
+  document.querySelector('div').className // "my-class"
+  document.querySelector('div').style.color // "red"
+</script>
+```
 
 [📚Move](<#📚카테고리-(Category)>)
