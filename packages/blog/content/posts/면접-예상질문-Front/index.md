@@ -25,6 +25,7 @@ series: FE기술면접
   - [👨‍💻 CI/CD에 대해 설명해 주세요.](#<strong>👨%E2%80%8D💻-CI/CD에-대해-설명해-주세요.</strong>)
   - [👨‍💻 다국어 페이지를 제공하는 여러방법에 대해서 설명](#<strong>👨‍💻-다국어-페이지를-제공하는-여러방법에-대해서-설명</strong>)
   - [👨‍💻 브라우저 렌더링 과정을 설명해주세요.](#<strong>👨‍💻-브라우저-렌더링-과정을-설명해주세요.</strong>)
+  - [👨‍💻 브라우저 렌더링 최적화 방법을 설명해주세요.](#<strong>👨‍💻-브라우저-렌더링-최적화-방법을-설명해주세요.</strong>)
   - [👨‍💻 Reflow와 Repaint 설명해주세요.](#<strong>👨‍💻-Reflow와-Repaint-설명해주세요.</strong>)
   - [👨‍💻 SEO란?](#<strong>👨‍💻-SEO란?</strong>)
   - [👨‍💻 Progressive rendering이란 무엇인가요?](#<strong>👨‍💻-Progressive-rendering이란-무엇인가요?</strong>)
@@ -189,12 +190,34 @@ URI=식별자, URL=식별자+위치
 
 - html 파싱 → DOM tree 생성 → Css파싱 → CSSOM tree 생성 → (DOM tree + CSSOM tree)Render tree 생성 → 레이아웃 → 페인트
 
+### **👨‍💻 브라우저 렌더링 최적화 방법을 설명해주세요.**
+
+**영향받는 노드 최소화하기 (position fixed, absolute)**
+
+- 상위 노드의 스타일을 변경하면 하위 노드에 모두 영향을 준다.
+- 다른 엘리먼트 레이아웃에 영향을 주지 않는 fixed와 absolute 속성을 사용한다.
+
+**숨겨진 엘리먼트 수정**
+
+- display: none의 경우 Reflow와 Repaint가 발생하지 않는다.
+- visibility: hidden의 경우 보이지 않기 때문에 Repaint는 발생하지 않지만 공간을 차지하기 때문에 Layout은 발생하게 됩니다.
+
+**transform, opacity 속성 사용하기**
+
+- reflow와 repaint가 일어나지 않는 속성입니다.
+- left, right 대신 transform 속성의 translate를 사용
+- visibility, display 대신 opacity 속성을 사용하면 reflow, repaint 발생을 최소화
+
+> 결론 : Reflow , Repaint 최소화
+
 ### **👨‍💻 Reflow와 Repaint 설명해주세요.**
 
 **Reflow**
 
 - HTML요소의 크기나 위치 등의 레이아웃 수치가 변하면 해당 요소의 영향을 받는 자식 노드나 부모 노드들을 포함하여 Layout(Reflow)과정을 다시 수행 하는 과정
-  - `Layout 과정` : 뷰포트 내에서 요소들이 어떻게 배치되는지를 결정하는 과정
+  - `Layout 과정`
+    - 뷰포트 내에서 요소들이 어떻게 배치되는지를 결정하는 과정
+    - 브라우저 화면의 어떤위치에 어떤크기로 출력될지 계산 하는 단계
 - 예시
   - 페이지 초기 렌더링 시 (최초 Layout 과정)
   - 브라우저 리사이징 시 (Viewport 크기 변경)
@@ -203,12 +226,28 @@ URI=식별자, URL=식별자+위치
   - DOM 노드의 크기 변경(margin, padding, border, width, height 등..)
   - 요소의 위치, 크기 변경
   - 폰트 변경과 이미지 크기 변경
+- 속성
+  - position
+  - width, height
+  - top, bottom, left, right
+  - margin, padding, border, border-width
+  - clear, display, float, overflow
+  - font-family, fontsize, font-weight
+  - line-height, min-height
+  - text-align, vertical-align
 
 **Repaint**
 
-- Reflow만 수행되면 실제 화면에는 반영되지 않기 때문에 다시 Painting이 일어나야 한다. 이 과정을 Repaint라고 한다.
+- Reflow만 수행되면 실제 화면에는 반영되지 않기 때문에 다시 `Painting`이 일어나야 한다. 이 과정을 Repaint라고 한다.
   - `Painting` : 레이아웃 단계에서 계산된 위치와 크기를 기반으로 실제로 화면에 픽셀을 그리는 과정.
 - Reflow가 발생하지 않아도 background-color 나 opacity 같이 레이아웃에 영향을 주지 않는 스타일 속성이 변했을 때는 reflow 없이 repaint만 일어난다.
+- 속성
+  - background, background-image, background-pisition, background-repeat, background-size
+  - border-radius, border-style, box-shadow
+  - color, outline-color
+  - line-style, outline
+  - clear, display, float, visibility
+  - font-family, fontsize, font-weight
 
 ### **👨‍💻 SEO란?**
 
