@@ -32,7 +32,7 @@ const IndexPage: VFC<PageProps<IndexQuery>> = (props) => {
               하고싶은 <strong>개발자</strong>입니다! 블로그에 글 열심히 작성할게요<EmojiText>😿</EmojiText> 많은{' '}
               <strong>피드백</strong> 부탁드려요<EmojiText>😺</EmojiText>
               <br />
-              <strong>2024.09 현재 관심사 :</strong> 구직 및 이력서 작성 <EmojiText>📩</EmojiText>
+              <strong>2024.10 현재 관심사 :</strong> 구직준비 <EmojiText>📩</EmojiText>
             </Text>
           </SubTitle>
           <Button size='large' color='success' onClick={() => moveToLocation('/posts')}>
