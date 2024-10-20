@@ -1,7 +1,7 @@
 ---
 title: 기술면접 예상 질문(HTML)
 tags:
-  - 프론트엔드
+  - Tech Interview
 image: ./assets/0.png
 date: 2024-10-01 18:10:00
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: 기술면접 예상 질문(Front)
 tags:
-  - 프론트엔드
+  - Tech Interview
 image: ./assets/0.png
 date: 2024-10-03 19:10:00
 draft: false
