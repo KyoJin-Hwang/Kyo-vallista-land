@@ -72,10 +72,9 @@ export const _Contents = styled(_Wrapper)`
       font-weight: 400;
       line-height: 1.5;
       letter-spacing: -0.02rem;
-      margin: 0 0 2rem;
+      margin: 0.5rem 0 2rem;
     }
 
-    p + center,
     iframe + center {
       margin-top: -1rem;
     }
