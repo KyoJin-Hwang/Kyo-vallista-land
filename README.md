@@ -1,6 +1,6 @@
 # Vallista Land
 
-vallista의 모든 레포에 쓰이는 디자인 시스템, 프로젝트 레포지토리입니다.
+vallista의 모든 레포에 쓰이는 디자인 시스템, 프로젝트 레포지토리입니다
 
 ## installation
 
