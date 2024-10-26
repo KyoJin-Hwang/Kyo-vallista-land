@@ -249,9 +249,7 @@ test(false)
 ```javascript {numberLines}
 const Example = new Promise((resolve, reject) => {
   // 비동기 시작
-  fetch('https://jsonplaceholder.typicode.com/todos/1')
-    // fetch("https://jsonplaceholder.typicode.com/todos/1322")
-    // fetch("https://noneapitest.com")
+  fetch('https://jsonplaceholder.typicode.com/todos/100')
     .then((response) => {
       if (!response.ok) {
         throw new Error(response.status)
@@ -263,7 +261,7 @@ const Example = new Promise((resolve, reject) => {
       resolve(data) // fetch 요청 성공 데이터
     })
     .catch((error) => {
-      reject(error + ' 에러가 났어!') // fetch 요청 실패 데이터
+      reject(`${error.message} 에러가 났어!`) // fetch 요청 실패 데이터
     })
 })
 
@@ -271,8 +269,12 @@ Example.then((data) => {
   // 위에 함수에서의 resolve값
   console.log('Resolve 값 : ', data)
 }).catch((error) => {
-  console.log(error)
+  console.log(error) // 에러가 났어! 메시지 출력
 })
 ```
+
+![then catch](./assets/3.png)
+
+<center> Test then,catch 이미지</center>
 
 [📚Move](<#📚카테고리-(Category)>)
