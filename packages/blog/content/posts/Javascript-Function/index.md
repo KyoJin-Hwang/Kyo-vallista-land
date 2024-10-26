@@ -1,7 +1,7 @@
 ---
-title: Function
+title: Javascript Function
 tags:
-  - Javascript
+  - Javascript 정리
 image: ./assets/0.png
 date: 2024-09-10 14:59:00
 draft: false

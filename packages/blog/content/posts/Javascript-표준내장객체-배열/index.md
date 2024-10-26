@@ -1,7 +1,7 @@
 ---
-title: 표준내장객체 (배열)
+title: Javascript 표준내장객체 (배열)
 tags:
-  - Javascript
+  - Javascript 정리
 image: ./assets/0.png
 date: 2024-09-22 17:30:00
 draft: false

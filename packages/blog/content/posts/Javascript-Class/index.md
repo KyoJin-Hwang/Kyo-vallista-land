@@ -1,7 +1,7 @@
 ---
-title: Class
+title: Javascript Class
 tags:
-  - Javascript
+  - Javascript 정리
 image: ./assets/0.png
 date: 2024-09-12 17:57:00
 draft: false

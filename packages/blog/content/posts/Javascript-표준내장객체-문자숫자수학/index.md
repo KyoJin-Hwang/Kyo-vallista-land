@@ -1,7 +1,7 @@
 ---
-title: 표준내장객체 (문자,숫자,수학)
+title: Javascript 표준내장객체 (문자,숫자,수학)
 tags:
-  - Javascript
+  - Javascript 정리
 image: ./assets/0.png
 date: 2024-09-12 18:30:00
 draft: false

@@ -1,7 +1,7 @@
 ---
-title: 데이터타입별 사용법
+title: Javascript 데이터타입별 사용법
 tags:
-  - Javascript
+  - Javascript 정리
 image: ./assets/0.png
 date: 2024-09-10 12:30:00
 draft: false
