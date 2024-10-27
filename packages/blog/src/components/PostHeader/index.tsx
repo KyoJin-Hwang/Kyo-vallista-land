@@ -51,7 +51,7 @@ export const PostHeader: FC<PostHeaderProps> = (props) => {
               </Text>
             </Styled._TextContainer>
             <Styled._IconContainer>
-              <Tooltip text='페이스북 공유' position='top'>
+              {/* <Tooltip text='페이스북 공유' position='top'>
                 <Styled._Icon onClick={facebookShare}>
                   <svg
                     viewBox='0 0 24 24'
@@ -67,7 +67,7 @@ export const PostHeader: FC<PostHeaderProps> = (props) => {
                     <path d='M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z' />
                   </svg>
                 </Styled._Icon>
-              </Tooltip>
+              </Tooltip> */}
               <Tooltip text='링크 복사' position='top'>
                 <Styled._Icon onClick={linkCopy}>
                   <svg

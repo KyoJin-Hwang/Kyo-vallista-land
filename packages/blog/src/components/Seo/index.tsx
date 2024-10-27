@@ -24,7 +24,6 @@ export const Seo: VFC<SeoProps> = ({ name, isPost = false }) => {
     image: `${siteUrl}${'/resume.png'}`,
     url: `${siteUrl}${decodeURIComponent(location.pathname)}`
   }
-  console.log(seo.image)
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
       <title>{seo.title}</title>

@@ -18,6 +18,9 @@ draft: false
 - [📌 동기와 비동기](#📌-동기와-비동기)
 - [📌 콜백](<#📌-콜백-(Callback)>)
 - [📌 프로미스](<#📌-프로미스-(Promise)>)
+- [📌 async / await](#📌-async-/-await)
+- [📌 반복문 비동기 처리](#📌-반복문-비동기-처리)
+- [📌 fetch](#📌-fetch)
 
 ## 📌 동기와 비동기
 
@@ -276,5 +279,264 @@ Example.then((data) => {
 ![then catch](./assets/3.png)
 
 <center> Test then,catch 이미지</center>
+
+### ⭐️ Promise 체이닝 방식
+
+- 여러개의 비동기 작업을 순차적으로 수행할 수 있다.
+
+**예시1**
+
+```javascript {numberLines}
+const a = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log(1)
+      resolve()
+    }, 1000)
+  })
+}
+const b = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log(2)
+      resolve()
+    }, 1000)
+  })
+}
+const c = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log(3)
+      resolve()
+    }, 1000)
+  })
+}
+
+const d = () => console.log(4)
+
+a()
+  .then(() => b())
+  .then(() => c())
+  .then(() => d())
+```
+
+**예시2**
+
+```javascript {numberLines}
+function doSomething() {
+  return new Promise((resolve, reject) => {
+    resolve(100)
+  })
+}
+
+doSomething()
+  .then((value1) => {
+    const data1 = value1 + 50
+    // 150
+    return data1
+  })
+  .then((value2) => {
+    // value 2는 위의 data1 값이된다
+    const data2 = value2 + 50
+    // 200
+    return data2
+  })
+  .then((value3) => {
+    // value3은 위의 data2 값이된다.
+    const data3 = value3 + 50
+    // 250
+    return data3
+  })
+  .then((value4) => {
+    // value4 === data3
+    console.log(value4) // 250 출력
+  })
+
+// 순차적으로 위에서부터 아래로 값을 전달해준다.
+```
+
+## 📌 async / await
+
+- 비동기 처리 방식이다.
+- `Promise` 기반이다.
+- `Promise`보다 코드가 길어질 경우 코드 가독성이 더 좋다.
+- `try , catch`를 통한 에러핸들링을 한다.
+- `await`은 `async` 안에서만 사용 할 수 있다.
+
+<br/>
+
+**예시**
+
+```javascript {numberLines}
+const a = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log(1)
+      resolve()
+    }, 1000)
+  })
+}
+const b = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log(2)
+      resolve()
+    }, 1000)
+  })
+}
+const c = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log(3)
+      resolve()
+    }, 1000)
+  })
+}
+
+const testAsyncAwait = async () => {
+  await a()
+  console.log('첫번째!')
+  await b()
+  console.log('두번째!')
+  await c()
+  console.log('세번쨰!')
+}
+
+testAsyncAwait()
+```
+
+### ⭐️ 코드 간소화
+
+- 상단의 만들어 놓은 async await의 코드를 간소화하기
+
+```javascript {numberLines}
+// 함수 한개 및 함수에서 인자를 받아서 처리
+
+const testConsole = (clgNumber) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log(clgNumber)
+      resolve()
+    }, 1000)
+  })
+}
+
+const testAsyncAwait = async () => {
+  await testConsole(1)
+  console.log('첫번째!')
+  await testConsole(2)
+  console.log('두번째!')
+  await testConsole(3)
+  console.log('세번쨰!')
+}
+
+testAsyncAwait()
+```
+
+[📚Move](<#📚카테고리-(Category)>)
+
+## 📌 반복문 비동기 처리
+
+```javascript {numberLines}
+const getMovies = (movieName) => {
+  return new Promise((resolve) => {
+    fetch(`https://www.omdbapi.com/?apikey=7035c60c&s=${movieName}`)
+      .then((res) => res.json())
+      .then((res) => resolve(res))
+  })
+}
+
+const titles = ['frozen', 'avengers', 'avatar']
+
+// forEach는 배열의 순서대로 출력되지않음
+// Promise를 기다리지 않는다 (mdn출처).
+
+titles.forEach(async (title) => {
+  const movies = await getMovies(title)
+  console.log(title, movies)
+})
+
+// 대안 1 for of
+const start = async () => {
+  for (const title of titles) {
+    const movies = await getMovies(title)
+    console.log(movies)
+  }
+}
+start()
+
+// 대안 2 Promise all
+// 하나라도 실패하면 reject 만 보내준다.
+const start2 = async () => {
+  // 각 제목에 대해 getMovies 함수를 호출하여 Promise 배열을 생성합니다.
+  const movies = await Promise.all(titles.map(getMovies))
+
+  movies.map((data) => {
+    console.log(data)
+  })
+}
+
+start2()
+
+// 대안 3 Promise allSettled
+// 실패해도 resolve 된 값과 reject 값을 전체 다보내준다.
+
+const promise1 = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve(1)
+  }, 3000)
+})
+
+const promise2 = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve(2)
+  }, 2000)
+})
+
+const promise3 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    reject(new Error('다 무시하고 에러내버려!'))
+  }, 2500)
+})
+
+const start3 = () => {
+  Promise.allSettled([promise1, promise2, promise3])
+    .then((result) => console.log(result.map((el) => el.value ?? '실패값')))
+    .catch((e) => console.error(e))
+}
+
+start3()
+```
+
+[📚Move](<#📚카테고리-(Category)>)
+
+## 📌 fetch
+
+- 네트워크를 통해서 리소스 요청(Request) 및 응답(Response)을 처리할 수 있다.
+- Promise 인스턴스를 반환한다.
+
+`대표적인 option`
+
+- method : GET, POST, PUT, DELETE
+- headers : 헤더는 요청 및 응답의 주요 속성을 정의하고, 데이터 형식, 인코딩, 캐싱, 인증 및 세션 관리와 같은 중요한 정보를 제공한다.
+- body : 필요한 정보를 서버에 보내야할 때 사용
+
+```javascript {numberLines}
+// then 방식
+const thenApi = () => {
+  fetch(`https://api.thecatapi.com/v1/images/search?limit=10`)
+    .then((res) => {
+      return res.json()
+    })
+    .then((data) => console.log(data))
+}
+
+// async / await 방식
+const asyncApi = async () => {
+  const res = await fetch(`https://api.thecatapi.com/v1/images/search?limit=${num}`)
+  const data = await res.json()
+  console.log(data)
+}
+```
 
 [📚Move](<#📚카테고리-(Category)>)

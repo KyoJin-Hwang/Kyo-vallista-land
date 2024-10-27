@@ -17,7 +17,6 @@ export const Markdown: VFC<MarkdownProps> = (props) => {
       // 해당 div는 스크롤 처리를 진행한다.
       .replaceAll('<pre', '<div class="markdown-wrapper"><pre')
       .replaceAll('</pre>', '</pre></div>')
-
     return result
   }, [])
 
