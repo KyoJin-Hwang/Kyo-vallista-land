@@ -214,9 +214,9 @@ export const _Contents = styled(_Wrapper)`
 
     /* iframe */
 
-    /* iframe {
-      margin-bottom: 2rem;
-    } */
+    iframe {
+      margin-bottom: 10px;
+    }
 
     /* Code */
     div[class*='markdown-wrapper'] {

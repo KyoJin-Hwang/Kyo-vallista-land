@@ -155,7 +155,7 @@ const ResumePage: VFC = () => {
           </Container>
         </Contents>
       </Box>
-      {/* 사이드 (포트폴리오)*/}
+      {/* 사이드 */}
       <Box id='side'>
         <Contents>
           <Container>

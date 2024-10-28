@@ -1,16 +1,17 @@
-// then 방식
+const el = document.querySelector('.child')
+const el2 = document.querySelector('.child2')
 
-const thenApi = () => {
-  fetch(`https://api.thecatapi.com/v1/images/search?limit=10`)
-    .then((res) => {
-      return res.json()
-    })
-    .then((data) => console.log(data))
+function addRemoveClick() {
+  if (el.classList.contains('active')) {
+    el.classList.remove('active')
+  } else {
+    el.classList.add('active')
+  }
+  el.textContent = el.classList.contains('active') ? 'Active' : 'Inactive'
 }
+el.onclick = addRemoveClick
 
-// async / await 방식
-const asyncApi = async () => {
-  const res = await fetch(`https://api.thecatapi.com/v1/images/search?limit=${num}`)
-  const data = await res.json()
-  console.log(data)
-}
+el2.addEventListener('click', () => {
+  el2.classList.toggle('active')
+  el2.textContent = el2.classList.contains('active') ? 'Active' : 'Inactive'
+})
