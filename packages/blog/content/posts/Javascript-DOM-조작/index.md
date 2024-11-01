@@ -1,7 +1,7 @@
 ---
 title: Javascript DOM 조작
 tags:
-  - Javascript 정리
+  - Javascript 기초 정리
 image: ./assets/0.png
 date: 2024-10-27 16:00:00
 draft: false

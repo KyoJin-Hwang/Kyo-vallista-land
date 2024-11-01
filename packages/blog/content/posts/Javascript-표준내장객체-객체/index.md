@@ -1,7 +1,7 @@
 ---
 title: Javascript 표준내장객체 (객체)
 tags:
-  - Javascript 정리
+  - Javascript 기초 정리
 image: ./assets/0.png
 date: 2024-09-23 16:30:00
 draft: false

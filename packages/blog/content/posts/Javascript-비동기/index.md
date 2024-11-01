@@ -1,7 +1,7 @@
 ---
 title: Javascript 비동기
 tags:
-  - Javascript 정리
+  - Javascript 기초 정리
 image: ./assets/0.png
 date: 2024-10-26 13:10:00
 draft: false
