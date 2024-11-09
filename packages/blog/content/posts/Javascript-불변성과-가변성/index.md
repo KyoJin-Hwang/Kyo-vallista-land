@@ -1,19 +1,19 @@
 ---
-title: Javascript 불변성과 가변성
+title: 불변성과 가변성
 tags:
   - Javascript 심화
 image: ./assets/0.png
 date: 2024-11-05 14:30:00
 draft: false
+series: Javascript 심화
 ---
 
 ![banner](./assets/0.png)
 
 `by Kyojin Hwang`
 
-## 📚카테고리 (Category)
-
-- [📌 불변성과 가변성](#📌-불변성과-가변성)
+<br/>
+<br/>
 
 ## 📌 불변성과 가변성
 
@@ -100,5 +100,3 @@ console.log(a)
 // M2 : 결과값: {x : 4}
 console.log(b)
 ```
-
-[📚Move](<#📚카테고리-(Category)>)
