@@ -1,16 +1,36 @@
-var globalVar = '전역 변수' // 전역 변수
+// 함수를 인수로 전달받고 함수를 반환하는 고차 함수
+// 이 함수는 카운트 상태를 유지하기 위한 자유 변수 counter를 기억하는 클로저를 반환한다.
 
-function outerFunction() {
-  var outerVar = '외부 함수 변수' // 외부 함수 변수
+function makeCounter(aux) {
+  // 카운트 상태를 유지하기 위한 자유 변수
+  let counter = 0
 
-  function innerFunction() {
-    var innerVar = '내부 함수 변수' // 내부 함수 변수
-    console.log(innerVar) // 내부 함수에서 "내부 함수 변수" 출력
-    console.log(outerVar) // 외부 함수에서 "외부 함수 변수" 출력
-    console.log(globalVar) // 전역에서 "전역 변수" 출력
+  // 클로저를 반환
+  return function () {
+    // 인수로 전달받은 보조 함수에 상태 변경을 위임한다.
+    counter = aux(counter)
+    return counter
   }
-
-  innerFunction() // innerFunction을 호출
 }
 
-outerFunction() // outerFunction을 호출
+// 보조 함수
+function increase(n) {
+  return ++n
+}
+
+// 보조 함수
+function decrease(n) {
+  return --n
+}
+
+// 함수로 함수를 생성한다.
+// makeCounter 함수는 보조 함수를 인수로 전달받아 함수를 반환한다.
+
+const increaser = makeCounter(increase)
+console.log(increaser()) // 1
+console.log(increaser()) // 2
+
+// increaser 함수와는 별개의 독립된 렉시컬 환경을 갖기 때문에 카운터 상태가 연동하지 않는다.
+const decreaser = makeCounter(decrease)
+console.log(decreaser()) // -1
+console.log(decreaser()) // -2
