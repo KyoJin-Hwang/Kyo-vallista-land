@@ -134,6 +134,37 @@
             ]
           }
         ]
+      },
+      {
+        "title": "오늘의 책님",
+        "techStacks": ["Next15, React18, ModuleCss, Typescript, GA4"],
+        "url": "https://github.com/KyoJin-Hwang/next-daily-book",
+        "descriptions": [
+          {
+            "title": "반응형 웹페이지 제작",
+            "subTitle": ["rem, media screen으로 반응형 웹 개발"]
+          },
+          {
+            "title": "서브도메인 설정 및 적용",
+            "subTitle": ["bobcost.kr 현재 블로그페이지 도메인을 활용한 서브도메인 사용으로 프로젝트 배포"]
+          },
+          {
+            "title": "Zustand 상태관리",
+            "subTitle": ["책의 열림, 카테고리 상태를 관리", "persist를 사용함으로 LocalStorage에도 상태를 저장한다."]
+          },
+          {
+            "title": "카카오톡 API 를 사용하여 공유 기능 구현",
+            "subTitle": [""]
+          },
+          {
+            "title": "다크모드 구현",
+            "subTitle": ["NextTheme 및 Global Css 를 통한 다크모드 구현"]
+          },
+          {
+            "title": "Google Analytics 적용",
+            "subTitle": ["DAU,MAU 확인을 위하여 @next/third-parties/google 사용해서 적용"]
+          }
+        ]
       }
     ]
   },
@@ -188,7 +219,7 @@
         ]
       },
       {
-        "title": "SPA,SSR (React, Next13☝️)",
+        "title": "SPA,SSR (React18☝️, Next13☝️)",
         "descriptions": [
           {
             "title": "크거나 작은 규모의 웹 페이지를 개발할 수 있습니다.",
@@ -211,7 +242,7 @@
             "subTitle": []
           },
           {
-            "title": "Next13이상 페이지를 개발할 수 있습니다.",
+            "title": "React18,Next13이상을 활용하여 페이지를 개발할 수 있습니다.",
             "subTitle": []
           }
         ]
