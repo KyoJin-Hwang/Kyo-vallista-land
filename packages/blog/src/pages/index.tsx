@@ -12,6 +12,9 @@ const MyState = { 0: '일하고 있습니다.', 1: '구직중 입니다.' }
 const IndexPage: VFC<PageProps<IndexQuery>> = (props) => {
   const { data } = props
   const { nodes } = data.allMarkdownRemark
+  const currentDate = new Date()
+  const year = currentDate.getFullYear() // 현재 년도
+  const month = (currentDate.getMonth() + 1).toString().padStart(2, '0') // 현재 월 (0부터 시작하므로 +1 해줍니다)
 
   return (
     <Container>
@@ -32,7 +35,10 @@ const IndexPage: VFC<PageProps<IndexQuery>> = (props) => {
               하고싶은 <strong>개발자</strong>입니다! <br />
               많은 <strong>피드백</strong> 부탁드리겠습니다.<EmojiText>😺</EmojiText>
               <br />
-              <strong>2024.02 현재 관심사 :</strong> 구직준비 <EmojiText>📩</EmojiText>
+              <strong>
+                {year}.{month} 현재 관심사 :
+              </strong>{' '}
+              구직준비 <EmojiText>📩</EmojiText>
             </Text>
           </SubTitle>
           <Button size='large' color='success' onClick={() => moveToLocation('/posts')}>

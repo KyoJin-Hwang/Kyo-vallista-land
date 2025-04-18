@@ -28,9 +28,9 @@ draft: false
 ### Cookie Properties
 
 - domain : 유효한 도메인을 설정한다.
-  - https://bobcost.kr
+  - https://www.bobcost.kr
 - path : 유효한 경로를 설정한다.
-  - https://bobcost.kr/resume
+  - https://www.bobcost.kr/resume
   - resume 은 패스가 된다.
 - expires : 만료날짜(UTC Date) 설정
 - max-age : 만료 타이머(s) 설정

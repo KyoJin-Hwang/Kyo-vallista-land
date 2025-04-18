@@ -40,7 +40,7 @@ jobs:
       - name: git config 이름 변경
         run: git config --global user.name "Kyojin-Hwang"
       # blog에 들어가서 deploy 스크립트에 TOKEN 주입해 실행
-      - name: 디랙토리 이동 및 bobcost.kr 배포
+      - name: 디랙토리 이동 및 www.bobcost.kr 배포
         run: |
           yarn directory:blog
           yarn deploy:blog-ex ${{ secrets.TOKEN }}

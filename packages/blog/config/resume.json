@@ -116,7 +116,7 @@
       {
         "title": "이력서 및 블로그 사이트",
         "techStacks": ["React"],
-        "url": "https://bobcost.kr",
+        "url": "https://www.bobcost.kr",
         "descriptions": [
           {
             "title": "모노레포 커스터마이징",
@@ -286,7 +286,7 @@
     "list": [
       {
         "title": "개발 블로깅",
-        "url": "https://bobcost.kr",
+        "url": "https://www.bobcost.kr",
         "descriptions": [
           "평소에도 글을 적는 것을 좋아하고 정리하는 것을 좋아해서",
           "회고록, 개발, 트러블슈팅 등등 현재블로그, velog에 같이 정리하려고 합니다.",

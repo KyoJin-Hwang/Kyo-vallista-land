@@ -26,7 +26,7 @@ module.exports = {
         defer: false,
         sampleRate: 5,
         siteSpeedSampleRate: 10,
-        cookieDomain: 'bobcost.kr'
+        cookieDomain: 'www.bobcost.kr'
       }
     },
 

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bobcost.kr/sitemap/sitemap-index.xml
+Sitemap: https://www.bobcost.kr/sitemap/sitemap-index.xml
